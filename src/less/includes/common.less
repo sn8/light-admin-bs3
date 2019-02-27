@@ -1,0 +1,78 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+#wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding-top: @topbar-height;
+
+  &.fixed-sidebar {
+    min-height: 100%;
+  }
+}
+
+#page-wrapper {
+  .transition (@transition-linear);
+  margin: 0 0 0 @sidebar-collapsed-width;
+  padding: 30px 15px 0 15px;
+  min-height: 568px;
+  min-height: calc(~"100vh" - @topbar-height);
+  background-color: @page-wrapper-background;
+}
+
+@media(min-width:768px) {
+  #page-wrapper {
+    position: inherit;
+    margin: 0 0 0 @sidebar-width;
+    padding: 30px 30px 0 30px;
+  }
+}
+
+#wrapper.without-sidebar {
+  #toggle-sidebar {
+    display: none;
+  }
+
+  #page-wrapper {
+    margin: 0;
+  }
+}
+
+.page-header {
+  margin: 0;
+  border: unset;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+.img-thumbnail {
+  background-color: @gray-lightest;
+  border-radius: unset;
+}
+
+.avatar {
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+legend {
+  padding: 0 0 3px;
+  font-weight: 300;
+  font-size: @font-size-large;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+// For Chart.js
+canvas {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}

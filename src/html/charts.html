@@ -1,0 +1,404 @@
+<!-- @@master = layouts/main.html-->
+
+<!-- @@block = content-->
+      <div class="row">
+          <div class="col-lg-12 heading">
+              <h1 class="page-header">Charts</h1>
+              <ol class="breadcrumb">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="active">Charts</li>
+              </ol>
+          </div>
+          <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+          <div class="col-lg-6">
+              <div class="panel panel-default no-border">
+                  <div class="panel-heading no-border">
+                      Line Chart
+                  </div>
+                  <!-- /.panel-heading -->
+                  <div class="panel-body">
+                    <canvas id="line-chart"></canvas>
+                  </div>
+                  <!-- /.panel-body -->
+              </div>
+              <!-- /.panel -->
+          </div>
+          <!-- /.col-lg-6 -->
+        <div class="col-lg-6">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Pie Chart
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <canvas id="pie-chart"></canvas>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-6 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Area Chart
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <canvas id="area-chart"></canvas>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-6 -->
+        <div class="col-lg-6">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Bar Chart
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <canvas id="bar-chart"></canvas>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-6 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Combo Bar Line Chart
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <canvas id="bar-line-chart"></canvas>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+<!-- @@close-->
+
+<!-- @@block = page-scripts-->
+  <script>
+    window.onload = function() {
+      window.lineChart = new Chart(document.getElementById('line-chart').getContext('2d'), {
+        type: 'line',
+        data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          datasets: [{
+            label: 'First dataset',
+            backgroundColor: window.chartColors.red,
+            borderColor: window.chartColors.red,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ],
+            fill: false,
+          }, {
+            label: 'Second dataset',
+            fill: false,
+            backgroundColor: window.chartColors.blue,
+            borderColor: window.chartColors.blue,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ],
+          }]
+        },
+        options: {
+          responsive: true,
+          title: {
+            display: false,
+          },
+          tooltips: {
+            mode: 'index',
+            intersect: false,
+          },
+          hover: {
+            mode: 'nearest',
+            intersect: true
+          },
+          legend: {
+            display: false
+          },
+          scales: {
+            xAxes: [{
+              display: true,
+              scaleLabel: {
+                display: false,
+                labelString: 'Month'
+              }
+            }],
+            yAxes: [{
+              display: true,
+              scaleLabel: {
+                display: false,
+                labelString: 'Value'
+              }
+            }]
+          }
+        }
+      });
+
+      window.pieChart = new Chart(document.getElementById('pie-chart').getContext('2d'), {
+        type: 'pie',
+        data: {
+          datasets: [{
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+            ],
+            backgroundColor: [
+              window.chartColors.red,
+              window.chartColors.orange,
+              window.chartColors.yellow,
+              window.chartColors.green,
+              window.chartColors.blue,
+            ],
+            label: 'Dataset 1'
+          }],
+          labels: [
+            'Red',
+            'Orange',
+            'Yellow',
+            'Green',
+            'Blue'
+          ]
+        },
+        options: {
+          responsive: true,
+          legend: {
+            display: false
+          }
+        }
+      });
+
+      window.areaChart = new Chart(document.getElementById('area-chart').getContext('2d'), {
+        type: 'line',
+        data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          datasets: [{
+            label: 'First dataset',
+            borderColor: window.chartColors.red,
+            backgroundColor: window.chartColors.red,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ],
+          }, {
+            label: 'Second dataset',
+            borderColor: window.chartColors.blue,
+            backgroundColor: window.chartColors.blue,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ],
+          }, {
+            label: 'Third dataset',
+            borderColor: window.chartColors.green,
+            backgroundColor: window.chartColors.green,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ],
+          }, {
+            label: 'Fourth dataset',
+            borderColor: window.chartColors.yellow,
+            backgroundColor: window.chartColors.yellow,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ],
+          }]
+        },
+        options: {
+          responsive: true,
+          title: {
+            display: false
+          },
+          tooltips: {
+            mode: 'index',
+          },
+          hover: {
+            mode: 'index'
+          },
+          legend: {
+            display: false
+          },
+          scales: {
+            xAxes: [{
+              scaleLabel: {
+                display: false,
+                labelString: 'Month'
+              }
+            }],
+            yAxes: [{
+              stacked: true,
+              scaleLabel: {
+                display: false,
+                labelString: 'Value'
+              }
+            }]
+          }
+        }
+      });
+
+      window.barChart = new Chart(document.getElementById('bar-chart').getContext('2d'), {
+        type: 'bar',
+        data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          datasets: [{
+            label: 'Dataset 1',
+            backgroundColor: window.chartColors.red,
+            borderColor: window.chartColors.red,
+            borderWidth: 1,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ]
+          }, {
+            label: 'Dataset 2',
+            backgroundColor: window.chartColors.blue,
+            borderColor: window.chartColors.blue,
+            borderWidth: 1,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ]
+          }]
+        },
+        options: {
+          responsive: true,
+          title: {
+            display: false
+          },
+          legend: {
+            display: false
+          }
+        }
+      });
+
+      window.barLineChart = new Chart(document.getElementById('bar-line-chart').getContext('2d'), {
+        type: 'bar',
+        data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          datasets: [{
+            type: 'line',
+            label: 'Dataset 1',
+            borderColor: window.chartColors.blue,
+            borderWidth: 2,
+            fill: false,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ]
+          }, {
+            type: 'bar',
+            label: 'Dataset 2',
+            backgroundColor: window.chartColors.red,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ],
+            borderColor: 'white',
+            borderWidth: 2
+          }, {
+            type: 'bar',
+            label: 'Dataset 3',
+            backgroundColor: window.chartColors.green,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ]
+          }]
+        },
+        options: {
+          responsive: true,
+          title: {
+            display: false
+          },
+          legend: {
+            display: false
+          },
+          tooltips: {
+            mode: 'index',
+            intersect: true
+          }
+        }
+      });
+    };
+  </script>
+<!-- @@close-->

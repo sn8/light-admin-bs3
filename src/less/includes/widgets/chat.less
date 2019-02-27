@@ -1,0 +1,181 @@
+.chat {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 15px 0 15px;
+    padding-bottom: 5px;
+
+    .chat-body {
+      position: relative;
+      display: inline-block;
+      border-radius: 3px;
+      padding: 5px 8px;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    &.left .chat-body {
+      margin-right: 50px;
+      background: @gray-lightest;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: -5px;
+        top: 7px;
+        border-bottom: 6px solid transparent;
+        border-right: 6px solid @gray-lightest;
+        border-top: 6px solid transparent;
+      }
+    }
+
+    &.right {
+      text-align: right;
+
+      .chat-body {
+        text-align: left;
+        margin-left: 50px;
+        background: @brand-primary;
+        color: #fff;
+
+        &:after {
+          content: "";
+          position: absolute;
+          right: -5px;
+          top: 7px;
+          border-bottom: 6px solid transparent;
+          border-left: 6px solid @brand-primary;
+          border-top: 6px solid transparent;
+        }
+      }
+    }
+  }
+}
+
+.chat-widget {
+  display: none;
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+  z-index: 1030;
+  width: 100%;
+  padding-left: 60px;
+
+  @media screen and (min-width: 768px) {
+    width: 700px;
+  }
+
+  .row {
+    margin: 0;
+
+    > div {
+      padding: 0;
+      min-height: 0px;
+    }
+  }
+
+  .panel {
+    .box-shadow(0 0 20px rgba(0, 0, 0, 0.18));
+  }
+
+  .panel-heading {
+    background: lighten(@gray-base, 94%);
+
+    .close {
+      margin: 3px 5px 3px 20px;
+    }
+  }
+
+  .chat-user {
+    padding: 10px 15px;
+    margin: 0 0 1px;
+    border-bottom: 1px solid @gray-lighter;
+    background: @gray-lightest;
+
+    .open-contact-list {
+      padding: 0;
+      margin: 10px 12px 0px 0px;
+    }
+  }
+
+  .chat-panel-body {
+    margin: 0;
+    height: 180px;
+    overflow-y: scroll;
+  }
+
+  .contacts-list {
+    height: 287px;
+    margin: 0;
+    overflow-y: scroll;
+    border-right: 1px solid @gray-lighter;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+
+    .list-group-item {
+      border-color: @gray-lighter;
+      border-left: unset;
+      border-right: unset;
+
+      &:first-child {
+        border-top: unset;
+      }
+
+      .badge {
+        font-size: 10px;
+        padding: 1px 6px 2px;
+      }
+
+      &.active .badge {
+        background: #fff;
+        color: @brand-primary;
+      }
+
+      .pull-right {
+        margin-top: -2px;
+        text-align: right;
+      }
+    }
+  }
+
+  .chat-user > .user,
+  .contacts-list .list-group-item > .user {
+    margin-left: 12px;
+
+    .info {
+      font-size: 12px;
+    }
+  }
+
+  .btn-link {
+    color: @gray-semilight;
+
+    &:hover,
+    &:focus {
+      color: lighten(@gray-semilight, 15%);
+      text-decoration: none;
+    }
+  }
+
+  .time {
+    margin-top: 4px;
+    font-size: 11px;
+  }
+
+  .text-input {
+    border: unset;
+  }
+
+  .panel-footer {
+    padding: 4px 3px;
+    border-color: @gray-lighter;
+    background: @gray-lightest;
+  }
+}

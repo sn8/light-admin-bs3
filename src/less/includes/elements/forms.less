@@ -1,0 +1,43 @@
+.form-control {
+  height: unset;
+  .box-shadow(unset);
+
+  &:focus {
+    .box-shadow(unset);
+  }
+
+  &-feedback {
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+  }
+}
+
+.input-group-addon {
+  border-radius: unset !important;
+}
+
+label {
+  font-weight: 400;
+  font-size: @font-size-base;
+  color: @gray-semilight;
+}
+
+select[multiple] {
+  padding: 0;
+
+  option {
+    padding: @padding-base-vertical (@padding-base-horizontal + 4px);
+  }
+}
+
+// Feedback states
+.has-success {
+  .feedback-state(@state-success-text);
+}
+.has-warning {
+  .feedback-state(@state-warning-text);
+}
+.has-error {
+  .feedback-state(@state-danger-text);
+}

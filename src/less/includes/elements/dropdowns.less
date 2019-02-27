@@ -1,0 +1,28 @@
+.dropdown-menu {
+  .box-shadow(0 2px 4px rgba(0, 0, 0, 0.08)) !important;
+  border-radius: @border-radius-base !important;
+  border: 1px solid @gray-border !important;
+  background: #fff !important;
+
+  &:not(.bootstrap-datetimepicker-widget) {
+    .transition (all 70ms ease-in);
+    .rotateX(70deg);
+    transform-style: preserve-3d;
+    backface-visibility: visible;
+    display: block;
+    visibility: hidden;
+  }
+
+  .divider {
+    margin: 5px 0;
+    border-color: #f9f9f9;
+  }
+}
+
+.open {
+  .dropdown-menu {
+    .transition (all 200ms ease-in);
+    .rotateX(0deg);
+    visibility: visible;
+  }
+}

@@ -1,0 +1,33 @@
+table.dataTable {
+  thead {
+    .sorting,
+    .sorting_asc,
+    .sorting_desc,
+    .sorting_asc_disabled,
+    .sorting_desc_disabled {
+      background: transparent;
+    }
+
+    .sorting:after,
+    .sorting_asc:after,
+    .sorting_desc:after {
+      font-size: 12px;
+    }
+  }
+
+  &.table-bordered{
+    tbody tr:first-child td {
+      border-top: unset;
+    }
+  }
+}
+
+.dataTables_wrapper {
+  > .row {
+    padding: 3px 0 3px;
+  }
+
+  .dataTables_info {
+    font-weight: 300;
+  }
+}

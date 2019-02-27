@@ -1,0 +1,114 @@
+.btn {
+  border-radius: unset;
+
+  &:not(.btn-outline) {
+    border: unset;
+  }
+
+  &-default:hover,
+  &-default:focus {
+    background: @btn-default-bg-hover !important;
+  }
+
+  .icon {
+    margin-right: 4px;
+  }
+
+  &:focus,
+  &:active,
+  &.active {
+    .box-shadow(unset) !important;
+  }
+
+  &-outline {
+    color: inherit;
+    background-color: transparent;
+  }
+
+  &-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.428571429;
+  }
+
+  &-primary.btn-outline {
+    color: @brand-primary;
+  }
+
+  &-success.btn-outline {
+    color: @brand-success;
+  }
+
+  &-info.btn-outline {
+    color: @brand-info;
+  }
+
+  &-warning.btn-outline {
+    color: @brand-warning;
+  }
+
+  &-danger.btn-outline {
+    color: @brand-danger;
+  }
+
+  &-primary.btn-outline:hover,
+  &-success.btn-outline:hover,
+  &-info.btn-outline:hover,
+  &-warning.btn-outline:hover,
+  &-danger.btn-outline:hover {
+    color: white;
+  }
+
+  // Social Buttons
+  &-social-icon > i {
+    font-size: 16px;
+  }
+
+  &-facebook {
+    .button-variant (#fff, #3b5998, #3b5998);
+  }
+
+  &-twitter {
+    .button-variant (#fff, #55acee, #55acee);
+  }
+
+  &-google-plus {
+    .button-variant (#fff, #dd4b39, #dd4b39);
+  }
+
+  &-linkedin {
+    .button-variant (#fff, #0976b4, #0976b4);
+  }
+
+  &-github {
+    .button-variant (#fff, #333333, #333333);
+  }
+
+  &-pinterest {
+    .button-variant (#fff, #e13138, #e13138);
+  }
+
+  &-dropbox {
+    .button-variant (#fff, #007ee5, #007ee5);
+  }
+
+  &-instagram {
+    .button-variant (#fff, #e1306c, #e1306c);
+  }
+
+  &-instagram {
+    .button-variant (#fff, #0063dc, #0063dc);
+  }
+
+  &-tumblr {
+    .button-variant (#fff, #35465c, #35465c);
+  }
+
+  &-flickr {
+    .button-variant (#fff, #ff0084, #ff0084);
+  }
+}

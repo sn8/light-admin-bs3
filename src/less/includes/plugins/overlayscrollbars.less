@@ -1,0 +1,22 @@
+.os-theme-dark {
+  .os-scrollbar-vertical {
+    width: @scrollbar-width;
+  }
+
+  .os-scrollbar-horizontal {
+    height: @scrollbar-width;
+  }
+
+  .os-scrollbar-vertical, .os-scrollbar-horizontal {
+    > .os-scrollbar-track > .os-scrollbar-handle {
+      border-radius: 2px;
+      background: rgba(0, 0, 0, 0.25);
+    }
+
+    &:hover {
+      .os-scrollbar-track > .os-scrollbar-handle {
+        background: rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}

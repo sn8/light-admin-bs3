@@ -1,0 +1,463 @@
+<!-- @@block = content-->
+<div class="row">
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-xs-3 icon">
+            <i class="ti-stats-up icon-huge icon-success"></i>
+          </div>
+          <div class="col-xs-9 text-right">
+            <div class="counter">256</div>
+            <div class="description">New Orders</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-xs-3 icon">
+            <i class="ti-user icon-huge icon-info"></i>
+          </div>
+          <div class="col-xs-9 text-right">
+            <div class="counter">810</div>
+            <div class="description">New Users</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-xs-3 icon">
+            <i class="ti-pulse icon-huge icon-warning"></i>
+          </div>
+          <div class="col-xs-9 text-right">
+            <div class="counter">26%</div>
+            <div class="description">Server Load</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-xs-3 icon">
+            <i class="ti-comments icon-huge icon-danger"></i>
+          </div>
+          <div class="col-xs-9 text-right">
+            <div class="counter">27</div>
+            <div class="description">Support Tickets</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.row -->
+<div class="row">
+  <div class="col-md-7">
+    <div class="panel panel-default no-border">
+      <div class="panel-heading no-border">
+        Site Visits
+      </div>
+      <!-- /.panel-heading -->
+      <div class="panel-body">
+        <canvas id="area-chart"></canvas>
+      </div>
+      <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+
+    <div class="panel panel-default no-border">
+      <div class="panel-heading no-border">
+        Feed
+      </div>
+      <!-- /.panel-heading -->
+      <div class="panel-body">
+        <div class="list-group feed-list">
+          <div class="list-group-item">
+            <div class="pull-right">
+              <div class="text-muted time">
+                1h ago
+              </div>
+            </div>
+            <div class="pull-left user-avatar">
+              <img class="avatar" src="assets/img/avatar4.jpg">
+            </div>
+            <div class="pull-left">
+              <strong>Jeffrey Cain</strong> started following <strong>Anne Mcgee</strong>.
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="list-group-item">
+              <div class="pull-right">
+                <div class="text-muted time">
+                  1h ago
+                </div>
+              </div>
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/img/avatar2.jpg">
+              </div>
+              <div class="pull-left">
+                <strong>Anne Mcgee</strong> added 3 photos.
+                <div>
+                  <img class="img-thumbnail" src="assets/img/photo1.jpeg">
+                  <img class="img-thumbnail" src="assets/img/photo2.jpeg">
+                  <img class="img-thumbnail" src="assets/img/photo3.jpeg">
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+        </div>
+        <button class="btn btn-sm btn-primary btn-block">
+          Load more
+        </button>
+      </div>
+      <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+
+
+  </div>
+  <!-- /.col-md-7 -->
+  <div class="col-md-5">
+    <div class="panel panel-default no-border">
+      <div class="panel-heading no-border">
+        Email Statistics
+      </div>
+      <!-- /.panel-heading -->
+      <div class="panel-body">
+        <canvas id="pie-chart"></canvas>
+        <br>
+        <a class="btn btn-block btn-lg">View More</a>
+      </div>
+      <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+
+    <div class="panel panel-default no-border">
+      <div class="panel-heading no-border">
+        Projects
+      </div>
+      <!-- /.panel-heading -->
+      <div class="panel-body">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+            <tr>
+              <th style="width: 5%">#</th>
+              <th style="width: 30%">Name</th>
+              <th style="width: 65%">Progress</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                Lorem
+                <a class="btn btn-xs btn-link" href="#">
+                  <span class="glyphicon glyphicon-new-window"></span>
+                </a>
+              </td>
+              <td>
+                <div class="progress no-margin">
+                  <div class="progress-bar progress-bar-success" style="width: 35%">
+                    35%
+                  </div>
+                  <div class="progress-bar progress-bar-warning" style="width: 25%">
+                    25%
+                  </div>
+                  <div class="progress-bar progress-bar-danger" style="width: 17%">
+                    17%
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                Ipsum
+                <a class="btn btn-xs btn-link" href="#">
+                  <span class="glyphicon glyphicon-new-window text-small"></span>
+                </a>
+              </td>
+              <td>
+                <div class="progress no-margin">
+                  <div class="progress-bar progress-bar-success" style="width: 20%">
+                    20%
+                  </div>
+                  <div class="progress-bar progress-bar-warning" style="width: 25%">
+                    25%
+                  </div>
+                  <div class="progress-bar progress-bar-danger" style="width: 50%">
+                    50%
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                Dolor sit
+                <a class="btn btn-xs btn-link" href="#">
+                  <span class="glyphicon glyphicon-new-window text-small"></span>
+                </a>
+              </td>
+              <td>
+                <div class="progress no-margin">
+                  <div class="progress-bar progress-bar-success" style="width: 100%">
+                    100%
+                  </div>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- /.table-responsive -->
+      </div>
+      <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+
+    <div class="panel panel-default todo-panel no-border">
+      <div class="panel-heading no-border">
+        Todo
+      </div>
+      <!-- /.panel-heading -->
+      <div class="panel-body">
+          <table class="table table-hover no-first-border">
+            <tbody>
+              <tr class="done">
+                <td>
+                  <div class="checkbox">
+                    <input class="styled styled-primary" checked="" type="checkbox">
+                    <label></label>
+                  </div>
+                </td>
+                <td class="text">Lorem ipsum dolor sit amet.</td>
+                <td class="controls">
+                  <button class="btn btn-xs btn-info">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                  </button>
+                  <button class="btn btn-xs btn-danger">
+                    <span class="glyphicon glyphicon-remove"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="checkbox">
+                    <input class="styled styled-primary" type="checkbox">
+                    <label></label>
+                  </div>
+                </td>
+                <td class="text">Velit numquam possimus eum delectus maiores dicta perspiciatis quae aperiam dolores facere, doloribus non, iusto, sit.</td>
+                <td class="controls">
+                  <button class="btn btn-xs btn-info">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                  </button>
+                  <button class="btn btn-xs btn-danger">
+                    <span class="glyphicon glyphicon-remove"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="done">
+                <td>
+                  <div class="checkbox">
+                    <input class="styled styled-primary" checked="" type="checkbox">
+                    <label></label>
+                  </div>
+                </td>
+                <td class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur recusandae a mollitia magni in.</td>
+                <td class="controls">
+                  <button class="btn btn-xs btn-info">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                  </button>
+                  <button class="btn btn-xs btn-danger">
+                    <span class="glyphicon glyphicon-remove"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="checkbox">
+                    <input class="styled styled-primary" type="checkbox">
+                    <label></label>
+                  </div>
+                </td>
+                <td class="text">Lorem ipsum dolor sit amet.</td>
+                <td class="controls">
+                  <button class="btn btn-xs btn-info">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                  </button>
+                  <button class="btn btn-xs btn-danger">
+                    <span class="glyphicon glyphicon-remove"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="done">
+                <td>
+                  <div class="checkbox">
+                    <input class="styled styled-primary" checked="" type="checkbox">
+                    <label></label>
+                  </div>
+                </td>
+                <td class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur recusandae a mollitia magni in.</td>
+                <td class="controls">
+                  <button class="btn btn-xs btn-info">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                  </button>
+                  <button class="btn btn-xs btn-danger">
+                    <span class="glyphicon glyphicon-remove"></span>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+  </div>
+  <!-- /.col-md-5 -->
+</div>
+<!-- /.row -->
+<!-- @@close-->
+
+<!-- @@block = page-scripts-->
+  <script>
+    $(function() {
+      notify({
+        type: 'info',
+        icon: 'ti-info-alt',
+        title: 'Hello, John Doe!',
+        message: 'Welcome to <strong>Light Admin</strong> &mdash; a lightweight bootstrap 3.x admin panel template.'
+      });
+
+      window.areaChart = new Chart(document.getElementById('area-chart').getContext('2d'), {
+        type: 'line',
+        data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          datasets: [{
+            label: 'First dataset',
+            borderColor: window.chartColors.red,
+            backgroundColor: window.chartColors.red,
+            fill: false,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ],
+          }, {
+            label: 'Second dataset',
+            borderColor: window.chartColors.yellow,
+            backgroundColor: window.chartColors.yellow,
+            fill: false,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ],
+          }, {
+            label: 'Third dataset',
+            borderColor: window.chartColors.green,
+            backgroundColor: window.chartColors.green,
+            fill: false,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ],
+          }]
+        },
+        options: {
+          responsive: true,
+          title: {
+            display: false
+          },
+          tooltips: {
+            mode: 'index',
+          },
+          hover: {
+            mode: 'index'
+          },
+          legend: {
+            display: false
+          },
+          scales: {
+            xAxes: [{
+              scaleLabel: {
+                display: false,
+                labelString: 'Month'
+              }
+            }],
+            yAxes: [{
+              stacked: true,
+              scaleLabel: {
+                display: false,
+                labelString: 'Value'
+              }
+            }]
+          }
+        }
+      });
+
+      window.pieChart = new Chart(document.getElementById('pie-chart').getContext('2d'), {
+        type: 'pie',
+        data: {
+          datasets: [{
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+            ],
+            backgroundColor: [
+              window.chartColors.red,
+              window.chartColors.orange,
+              window.chartColors.yellow,
+              window.chartColors.green,
+              window.chartColors.blue,
+            ],
+            label: 'Dataset 1'
+          }],
+          labels: [
+            'Red',
+            'Orange',
+            'Yellow',
+            'Green',
+            'Blue'
+          ]
+        },
+        options: {
+          responsive: true,
+          legend: {
+            display: false
+          }
+        }
+      });
+    });
+  </script>
+<!-- @@close-->

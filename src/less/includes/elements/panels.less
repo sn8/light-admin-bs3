@@ -1,0 +1,117 @@
+.panel {
+  margin: 0 0 30px 0;
+  border-radius: unset !important;
+  .box-shadow(unset);
+
+  .no-border,
+  &.no-border,
+  &.no-border > .panel-collapse > .panel-body {
+    border: unset;
+  }
+
+  > .panel-heading {
+    border-radius: unset;
+    background: unset;
+    font-size: @font-size-large;
+    font-weight: 300;
+
+    > a {
+      position: relative;
+      text-decoration: none;
+      color: @brand-primary;
+
+      > .icon {
+        .transition (@transition);
+        vertical-align: middle;
+        display: inline-block;
+        position: relative;
+        top: -2px;
+        margin-right: 3px;
+        font-size: 13px;
+      }
+
+      &.collapsed {
+        > .icon {
+          .rotate (-90deg);
+        }
+      }
+    }
+  }
+
+  &.full-color > .panel-heading {
+    border-color: rgba(255, 255, 255, 0.1)
+  }
+
+  &-transparent {
+    border: unset;
+    background: unset;
+  }
+
+  > .panel-footer {
+    border: unset;
+    background: unset;
+  }
+
+  &-default > .panel-heading > a {
+    .panel-variant(#fff, @brand-primary);
+  }
+
+  &-primary > .panel-heading,
+  &-primary > .panel-heading > a,
+  &-primary.full-color > .panel-heading,
+  &-primary.full-color .panel-body {
+    .panel-variant(@brand-primary);
+  }
+
+  &-success > .panel-heading,
+  &-success > .panel-heading > a,
+  &-success.full-color > .panel-heading,
+  &-success.full-color .panel-body {
+    .panel-variant(@brand-success);
+  }
+
+  &-info > .panel-heading,
+  &-info > .panel-heading > a,
+  &-info.full-color > .panel-heading,
+  &-info.full-color .panel-body {
+    .panel-variant(@brand-info);
+  }
+
+  &-warning > .panel-heading,
+  &-warning > .panel-heading > a,
+  &-warning.full-color > .panel-heading,
+  &-warning.full-color .panel-body {
+    .panel-variant(@brand-warning);
+  }
+
+  &-danger > .panel-heading,
+  &-danger > .panel-heading > a,
+  &-danger.full-color > .panel-heading,
+  &-danger.full-color .panel-body {
+    .panel-variant(@brand-danger);
+  }
+}
+
+.panel-group {
+  &.accordion {
+    .panel {
+      &-primary,
+      &-success,
+      &-info,
+      &-warning,
+      &-danger {
+        border-color: #ddd;
+      }
+
+      > .panel-heading {
+        padding: 0;
+        background: unset;
+
+        > a {
+          display: block;
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.modal{
+  &-content {
+    .box-shadow(0 3px 12px rgba(0,0,0,0.3));
+    border-radius: unset;
+    border: unset;
+  }
+
+  &-header {
+    .close {
+      margin-top: -1px;
+      font-size: 26px;
+    }
+  }
+
+  &-primary,
+  &-success,
+  &-info,
+  &-warning,
+  &-danger {
+    .modal-header {
+      border: unset;
+      color: #fff;
+
+      .close {
+        color: #fff;
+      }
+    }
+  }
+
+  &-primary .modal-header {
+    background: @brand-primary;
+  }
+
+  &-success .modal-header {
+    background: @brand-success;
+  }
+
+  &-info .modal-header {
+    background: @brand-info;
+  }
+
+  &-warning .modal-header {
+    background: @brand-warning;
+  }
+
+  &-danger .modal-header {
+    background: @brand-danger;
+  }
+}

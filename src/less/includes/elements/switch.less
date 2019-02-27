@@ -1,0 +1,151 @@
+// Based on https://proto.io/freebies/onoff/
+
+.onoffswitch {
+  position: relative;
+  width: 65px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  &-sm {
+    width: 50px;
+
+    .onoffswitch-inner {
+      &:before,
+      &:after {
+        height: 20px;
+        line-height: 20px;
+        font-size: 11px;
+      }
+    }
+
+    .onoffswitch-switch {
+      width: 8px;
+      right: 30px;
+    }
+  }
+
+  &-lg {
+    width: 80px;
+
+    .onoffswitch-inner {
+      &:before,
+      &:after {
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+      }
+    }
+
+    .onoffswitch-switch {
+      width: 18px;
+      right: 50px;
+    }
+  }
+
+  &-checkbox {
+    display: none;
+  }
+
+  &-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  &-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+
+    &:before,
+    &:after {
+      display: block;
+      float: left;
+      width: 50%;
+      height: 25px;
+      padding: 0;
+      line-height: 25px;
+      font-size: 12px;
+      color: white;
+      font-weight: bold;
+      box-sizing: border-box;
+    }
+
+    &:before {
+      content: "ON";
+      padding-left: 10px;
+      background-color: @brand-primary;
+      color: #FFFFFF;
+    }
+
+    &:after {
+      content: "OFF";
+      padding-right: 10px;
+      background-color: #EEEEEE;
+      color: #999999;
+      text-align: right;
+    }
+  }
+
+  &-switch {
+    display: block;
+    width: 13px;
+    margin: 6px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 40px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+  }
+
+  &-checkbox:checked + &-label &-inner {
+    margin-left: 0;
+  }
+
+  &-checkbox:checked + &-label &-switch {
+    right: 0px;
+  }
+
+  &-yesno .onoffswitch-inner {
+    &:before {
+      content: "YES";
+    }
+
+    &:after {
+      content: "NO";
+    }
+  }
+
+  &-success .onoffswitch-inner {
+    &:before {
+      background-color: @brand-success;
+    }
+  }
+
+  &-info .onoffswitch-inner {
+    &:before {
+      background-color: @brand-info;
+    }
+  }
+
+  &-warning .onoffswitch-inner {
+    &:before {
+      background-color: @brand-warning;
+    }
+  }
+
+  &-danger .onoffswitch-inner {
+    &:before {
+      background-color: @brand-danger;
+    }
+  }
+}
+
+.form-group .onoffswitch {
+  margin-top: 7px;
+}

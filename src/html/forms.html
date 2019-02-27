@@ -1,0 +1,977 @@
+<!-- @@master = layouts/main.html-->
+
+<!-- @@block = content-->
+      <div class="row">
+          <div class="col-lg-12 heading">
+              <h1 class="page-header">Forms</h1>
+              <ol class="breadcrumb">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="active">Forms</li>
+              </ol>
+          </div>
+          <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+             Basic Form
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <form role="form">
+                <div class="form-group">
+                  <label>Email address</label>
+                  <input type="email" placeholder="Enter email" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" placeholder="Password" class="form-control">
+                </div>
+                <div class="checkbox checkbox-primary">
+                  <input type="checkbox" id="checkbox">
+                  <label for="checkbox">
+                    Remember me
+                  </label>
+                </div>
+                <div class="text-inverse">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-sm-6 -->
+        <div class="col-sm-6">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Horizontal Form
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <form role="form" class="form-horizontal">
+                <div class="form-group">
+                  <label for="inputEmail" class="col-sm-3 control-label">Email</label>
+                  <div class="col-sm-9">
+                    <input id="inputEmail" type="email" placeholder="Email" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword" class="col-sm-3 control-label">Password</label>
+                  <div class="col-sm-9">
+                    <input id="inputPassword" type="password" placeholder="Password" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-3 col-sm-9">
+                    <div class="checkbox checkbox-primary">
+                      <input type="checkbox" id="checkbox0">
+                      <label for="checkbox0">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-3 col-sm-9">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-sm-6 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Basic Elements
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <form action="#" class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Input Text</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Input Password</label>
+                  <div class="col-sm-6">
+                    <input type="password" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Placeholder Input</label>
+                  <div class="col-sm-6">
+                    <input type="text" placeholder="Placeholder text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Disabled Input</label>
+                  <div class="col-sm-6">
+                    <input type="text" disabled="disabled" placeholder="Disabled input text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Readonly Input</label>
+                  <div class="col-sm-6">
+                    <input type="text" readonly="readonly" value="Readonly input text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Textarea</label>
+                  <div class="col-sm-6">
+                    <textarea class="form-control"></textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Select
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <form action="#" class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Basic Select</label>
+                  <div class="col-sm-6">
+                    <select class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Multiple Select</label>
+                  <div class="col-sm-6">
+                    <select multiple="" class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Validation States
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <form action="#" class="form-horizontal">
+                <div class="form-group has-success">
+                  <label class="col-sm-3 control-label">Success</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group has-warning">
+                  <label class="col-sm-3 control-label">Warning</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group has-error">
+                  <label class="col-sm-3 control-label">Danger</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="panel-divider"></div>
+                <div class="form-group has-success has-feedback">
+                  <label class="col-sm-3 control-label">Success</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control"><span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                  </div>
+                </div>
+                <div class="form-group has-warning has-feedback">
+                  <label class="col-sm-3 control-label">Warning</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control"><span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+                  </div>
+                </div>
+                <div class="form-group has-error has-feedback">
+                  <label class="col-sm-3 control-label">Danger</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control"><span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Input Groups
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <form action="#" class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Input Text</label>
+                  <div class="col-sm-6">
+                    <div class="input-group"><span class="input-group-addon">@</span>
+                      <input type="text" placeholder="Username" class="form-control">
+                    </div>
+                    <br>
+                    <div class="input-group">
+                      <input type="text" class="form-control"><span class="input-group-addon">.00</span>
+                    </div>
+                    <br>
+                    <div class="input-group"><span class="input-group-addon">$</span>
+                      <input type="text" class="form-control"><span class="input-group-addon">.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Input Sizing</label>
+                  <div class="col-sm-6">
+                    <div class="input-group input-group-lg"><span class="input-group-addon">@</span>
+                      <input type="text" placeholder="Username" class="form-control">
+                    </div>
+                    <br>
+                    <div class="input-group"><span class="input-group-addon">@</span>
+                      <input type="text" placeholder="Username" class="form-control">
+                    </div>
+                    <br>
+                    <div class="input-group input-group-sm"><span class="input-group-addon">@</span>
+                      <input type="text" placeholder="Username" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Button Addons</label>
+                  <div class="col-sm-6">
+                    <div class="input-group">
+                      <input type="text" class="form-control"><span class="input-group-btn">
+                      <button type="button" class="btn btn-primary">Go!</button></span>
+                    </div>
+                    <br>
+                    <div class="input-group">
+                      <input type="text" class="form-control">
+                      <div class="input-group-btn">
+                        <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Action <span class="caret"></span></button>
+                        <ul class="dropdown-menu pull-right">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="input-group">
+                      <input type="text" class="form-control">
+                      <div class="input-group-btn">
+                        <button tabindex="-1" type="button" class="btn btn-primary">Action</button>
+                        <button tabindex="-1" data-toggle="dropdown" type="button" class="btn btn-primary btn-shade1 dropdown-toggle"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
+                        <ul role="menu" class="dropdown-menu pull-right">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              FlipSwitch
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <form action="#" class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Default</label>
+                  <div class="col-sm-6">
+                    <div class="onoffswitch">
+                      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                      <label class="onoffswitch-label" for="myonoffswitch">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Success</label>
+                  <div class="col-sm-6">
+                    <div class="onoffswitch onoffswitch-success">
+                      <input type="checkbox" name="onoffswitch2" class="onoffswitch-checkbox" id="myonoffswitch2" checked>
+                      <label class="onoffswitch-label" for="myonoffswitch2">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Info</label>
+                  <div class="col-sm-6">
+                    <div class="onoffswitch onoffswitch-info">
+                      <input type="checkbox" name="onoffswitch3" class="onoffswitch-checkbox" id="myonoffswitch3" checked>
+                      <label class="onoffswitch-label" for="myonoffswitch3">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Warning</label>
+                  <div class="col-sm-6">
+                    <div class="onoffswitch onoffswitch-warning">
+                      <input type="checkbox" name="onoffswitch4" class="onoffswitch-checkbox" id="myonoffswitch4" checked>
+                      <label class="onoffswitch-label" for="myonoffswitch4">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Danger</label>
+                  <div class="col-sm-6">
+                    <div class="onoffswitch onoffswitch-danger">
+                      <input type="checkbox" name="onoffswitch5" class="onoffswitch-checkbox" id="myonoffswitch5" checked>
+                      <label class="onoffswitch-label" for="myonoffswitch5">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Yes / No</label>
+                  <div class="col-sm-6">
+                    <div class="onoffswitch onoffswitch-yesno">
+                      <input type="checkbox" name="onoffswitch6" class="onoffswitch-checkbox" id="myonoffswitch6" checked>
+                      <label class="onoffswitch-label" for="myonoffswitch6">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Sizes</label>
+                  <div class="col-sm-6">
+                    <div class="onoffswitch onoffswitch-sm">
+                      <input type="checkbox" name="onoffswitch7" class="onoffswitch-checkbox" id="myonoffswitch7" checked>
+                      <label class="onoffswitch-label" for="myonoffswitch7">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                      </label>
+                    </div>
+                    <div class="onoffswitch onoffswitch">
+                      <input type="checkbox" name="onoffswitch8" class="onoffswitch-checkbox" id="myonoffswitch8" checked>
+                      <label class="onoffswitch-label" for="myonoffswitch8">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                      </label>
+                    </div>
+                    <div class="onoffswitch onoffswitch-lg">
+                      <input type="checkbox" name="onoffswitch9" class="onoffswitch-checkbox" id="myonoffswitch9" checked>
+                      <label class="onoffswitch-label" for="myonoffswitch9">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Date Picker
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <form action="#" class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Default</label>
+                  <div class="col-sm-4">
+                    <div class="input-group date" id="datetimepicker1">
+                      <input type="text" class="form-control" />
+                      <span class="input-group-addon">
+                        <i class="ti-calendar"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Time Only</label>
+                  <div class="col-sm-4">
+                    <div class="input-group date" id="datetimepicker2">
+                      <input type="text" class="form-control" />
+                      <span class="input-group-addon">
+                        <i class="ti-time"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Year View</label>
+                  <div class="col-sm-4">
+                    <div class="input-group date" id="datetimepicker3">
+                      <input type="text" class="form-control" />
+                      <span class="input-group-addon">
+                        <i class="ti-calendar"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Select2
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <form action="#" class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Default</label>
+                  <div class="col-sm-4">
+                    <select class="form-control select2">
+                      <optgroup label="Alaskan/Hawaiian Time Zone">
+                        <option value="AK">Alaska</option>
+                        <option value="HI">Hawaii</option>
+                      </optgroup>
+                      <optgroup label="Pacific Time Zone">
+                        <option value="CA">California</option>
+                        <option value="NV">Nevada</option>
+                        <option value="OR">Oregon</option>
+                        <option value="WA">Washington</option>
+                      </optgroup>
+                      <optgroup label="Mountain Time Zone">
+                        <option value="AZ">Arizona</option>
+                        <option value="CO">Colorado</option>
+                        <option value="ID">Idaho</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="UT">Utah</option>
+                        <option value="WY">Wyoming</option>
+                      </optgroup>
+                      <optgroup label="Central Time Zone">
+                        <option value="AL">Alabama</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TX">Texas</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="WI">Wisconsin</option>
+                      </optgroup>
+                      <optgroup label="Eastern Time Zone">
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="IN">Indiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="OH">Ohio</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WV">West Virginia</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Multiple</label>
+                  <div class="col-sm-4">
+                    <select class="form-control select2" name="states[]" multiple="multiple">
+                      <optgroup label="Alaskan/Hawaiian Time Zone">
+                        <option value="AK">Alaska</option>
+                        <option value="HI">Hawaii</option>
+                      </optgroup>
+                      <optgroup label="Pacific Time Zone">
+                        <option value="CA">California</option>
+                        <option value="NV">Nevada</option>
+                        <option value="OR">Oregon</option>
+                        <option value="WA">Washington</option>
+                      </optgroup>
+                      <optgroup label="Mountain Time Zone">
+                        <option value="AZ">Arizona</option>
+                        <option value="CO">Colorado</option>
+                        <option value="ID">Idaho</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="UT">Utah</option>
+                        <option value="WY">Wyoming</option>
+                      </optgroup>
+                      <optgroup label="Central Time Zone">
+                        <option value="AL">Alabama</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TX">Texas</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="WI">Wisconsin</option>
+                      </optgroup>
+                      <optgroup label="Eastern Time Zone">
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="IN">Indiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="OH">Ohio</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WV">West Virginia</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Checkboxes
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-4">
+                  <fieldset>
+                    <legend>
+                      Basic
+                    </legend>
+                    <p>
+                      Supports bootstrap brand colors: <code>.checkbox-primary</code>, <code>.checkbox-info</code> etc.
+                    </p>
+                    <div class="checkbox">
+                      <input id="checkbox1" class="styled" type="checkbox">
+                      <label for="checkbox1">
+                        Default
+                      </label>
+                    </div>
+                    <div class="checkbox checkbox-primary">
+                      <input id="checkbox2" class="styled" checked="" type="checkbox">
+                      <label for="checkbox2">
+                        Primary
+                      </label>
+                    </div>
+                    <div class="checkbox checkbox-success">
+                      <input id="checkbox3" class="styled" type="checkbox">
+                      <label for="checkbox3">
+                        Success
+                      </label>
+                    </div>
+                    <div class="checkbox checkbox-info">
+                      <input id="checkbox4" class="styled" type="checkbox">
+                      <label for="checkbox4">
+                        Info
+                      </label>
+                    </div>
+                    <div class="checkbox checkbox-warning">
+                      <input id="checkbox5" class="styled" checked="" type="checkbox">
+                      <label for="checkbox5">
+                        Warning
+                      </label>
+                    </div>
+                    <div class="checkbox checkbox-danger">
+                      <input id="checkbox6" class="styled" checked="" type="checkbox">
+                      <label for="checkbox6">
+                        Check me out
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-md-4">
+                  <fieldset>
+                    <legend>
+                      Circled
+                    </legend>
+                    <p>
+                      <code>.checkbox-circle</code> for roundness.
+                    </p>
+                    <div class="checkbox checkbox-circle">
+                      <input id="checkbox7" class="styled" type="checkbox">
+                      <label for="checkbox7">
+                        Simply Rounded
+                      </label>
+                    </div>
+                    <div class="checkbox checkbox-info checkbox-circle">
+                      <input id="checkbox8" class="styled" checked="" type="checkbox">
+                      <label for="checkbox8">
+                        Me too
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-md-4">
+                  <fieldset>
+                    <legend>
+                      Disabled
+                    </legend>
+                    <p>
+                      Disabled state also supported.
+                    </p>
+                    <div class="checkbox">
+                      <input class="styled" id="checkbox9" disabled="" type="checkbox">
+                      <label for="checkbox9">
+                        Can't check this
+                      </label>
+                    </div>
+                    <div class="checkbox checkbox-success">
+                      <input class="styled styled" id="checkbox10" disabled="" checked="" type="checkbox">
+                      <label for="checkbox10">
+                        This too
+                      </label>
+                    </div>
+                    <div class="checkbox checkbox-warning checkbox-circle">
+                      <input class="styled" id="checkbox11" disabled="" checked="" type="checkbox">
+                      <label for="checkbox11">
+                        And this
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-md-4">
+                  <fieldset>
+                    <legend>
+                      Without label text
+                    </legend>
+                    <p>Checkboxes without label text</p>
+                    <div class="checkbox">
+                      <input class="styled" id="singleCheckbox1" value="option1" aria-label="Single checkbox One" type="checkbox">
+                      <label></label>
+                    </div>
+                    <div class="checkbox checkbox-primary">
+                      <input class="styled styled-primary" id="singleCheckbox2" value="option2" checked="" aria-label="Single checkbox Two" type="checkbox">
+                      <label></label>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-md-4">
+                  <fieldset>
+                    <legend>
+                      Indeterminate state
+                    </legend>
+                    <p>Checkboxes with indeterminate state</p>
+                    <div class="checkbox checkbox-primary">
+                      <input id="indeterminateCheckbox" class="styled" onclick="changeState(this)" type="checkbox">
+                      <label></label>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-md-4">
+                  <fieldset>
+                    <legend>
+                      Inline checkboxes
+                    </legend>
+                    <div class="checkbox checkbox-inline">
+                      <input class="styled" id="inlineCheckbox1" value="option1" type="checkbox">
+                      <label for="inlineCheckbox1"> One </label>
+                    </div>
+                    <div class="checkbox checkbox-success checkbox-inline">
+                      <input class="styled" id="inlineCheckbox2" value="option1" checked="" type="checkbox">
+                      <label for="inlineCheckbox2"> Two </label>
+                    </div>
+                    <div class="checkbox checkbox-inline">
+                      <input class="styled" id="inlineCheckbox3" value="option1" type="checkbox">
+                      <label for="inlineCheckbox3"> Three </label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+        <div class="col-lg-12">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Radios
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-4">
+                  <fieldset>
+                    <legend>
+                      Basic
+                    </legend>
+                    <p>
+                      Supports bootstrap brand colors: <code>.radio-primary</code>, <code>.radio-danger</code> etc.
+                    </p>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="radio">
+                          <input name="radio1" id="radio1" value="option1" checked="" type="radio">
+                          <label for="radio1">
+                            Small
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <input name="radio1" id="radio2" value="option2" type="radio">
+                          <label for="radio2">
+                            Big
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="radio radio-danger">
+                          <input name="radio2" id="radio3" value="option1" type="radio">
+                          <label for="radio3">
+                            Next
+                          </label>
+                        </div>
+                        <div class="radio radio-danger">
+                          <input name="radio2" id="radio4" value="option2" checked="" type="radio">
+                          <label for="radio4">
+                            One
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-md-4">
+                  <fieldset>
+                    <legend>
+                      Disabled
+                    </legend>
+                    <p>
+                      Disabled state also supported.
+                    </p>
+                    <div class="radio radio-danger">
+                      <input name="radio3" id="radio5" value="option1" disabled="" type="radio">
+                      <label for="radio5">
+                        Next
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <input name="radio3" id="radio6" value="option2" checked="" disabled="" type="radio">
+                      <label for="radio6">
+                        One
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-md-4">
+                  <fieldset>
+                    <legend>
+                      As Checkboxes
+                    </legend>
+                    <p>
+                      Radios can be made to look like checkboxes.
+                    </p>
+                    <div class="checkbox checkbox">
+                      <input name="radio4" id="radio7" value="option1" checked="" type="radio">
+                      <label for="radio7">
+                        Default
+                      </label>
+                    </div>
+                    <div class="checkbox checkbox-success">
+                      <input name="radio4" id="radio8" value="option2" type="radio">
+                      <label for="radio8">
+                        Success
+                      </label>
+                    </div>
+                    <div class="checkbox checkbox-danger">
+                      <input name="radio4" id="radio9" value="option3" type="radio">
+                      <label for="radio9">
+                        Danger
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-md-4">
+                  <fieldset>
+                    <legend>
+                      Without label text
+                    </legend>
+                    <p>Radios without label text</p>
+                    <div class="radio">
+                      <input id="singleRadio1" value="option1" name="radioSingle1" aria-label="Single radio One" type="radio">
+                      <label></label>
+                    </div>
+                    <div class="radio radio-success">
+                      <input id="singleRadio2" value="option2" name="radioSingle1" checked="" aria-label="Single radio Two" type="radio">
+                      <label></label>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-md-4">
+                  <fieldset>
+                    <legend>
+                      Inline radios
+                    </legend>
+                    <div class="radio radio-info radio-inline">
+                      <input id="inlineRadio1" value="option1" name="radioInline" checked="" type="radio">
+                      <label for="inlineRadio1"> Inline One </label>
+                    </div>
+                    <div class="radio radio-inline">
+                      <input id="inlineRadio2" value="option2" name="radioInline" type="radio">
+                      <label for="inlineRadio2"> Inline Two </label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+<!-- @@close-->
+
+<!-- @@block = page-scripts-->
+  <script>
+    $(function () {
+      $('#datetimepicker1').datetimepicker();
+      $('#datetimepicker2').datetimepicker({
+        format: 'LT'
+      });
+      $('#datetimepicker3').datetimepicker({
+        viewMode: 'years',
+        format: 'YYYY'
+      });
+
+      $('.select2').select2({ theme: 'bootstrap' });
+    });
+
+    function changeState(el) {
+      if (el.readOnly) el.checked=el.readOnly = false;
+      else if (!el.checked) el.readOnly=el.indeterminate = true;
+    }
+  </script>
+<!-- @@close-->

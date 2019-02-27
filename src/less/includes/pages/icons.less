@@ -1,0 +1,47 @@
+.icon-section {
+  margin: 0 15px 40px;
+  clear: both;
+  overflow: hidden;
+
+  .icon-container {
+    width: 50%;
+    @media screen and (min-width: 768px) {
+      width: 33%;
+    }
+    @media screen and (min-width: 992px) {
+      width: 25%
+    }
+    padding: 25px 0;
+    float: left;
+    position: relative;
+    text-align: left;
+  }
+
+  &.glyphicons {
+    .icon-container {
+      width: 100%;
+      @media screen and (min-width: 768px) {
+        width: 50%;
+      }
+      @media screen and (min-width: 992px) {
+        width: 33%
+      }
+    }
+  }
+
+  [class^="ti-"],
+  [class*=" ti-"],
+  .glyphicon {
+    top: unset;
+    font-size: 22px;
+    position: absolute;
+    border: none;
+    padding: 0;
+  }
+
+  .icon-name {
+    margin-left: 40px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

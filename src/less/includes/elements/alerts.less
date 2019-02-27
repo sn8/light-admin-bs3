@@ -1,0 +1,35 @@
+.alert {
+  border: unset;
+
+  &.alert-dismissable {
+    padding-right: 40px;
+
+    .close {
+      top: -3px;
+      font-size: 26px;
+    }
+  }
+
+  .icon {
+    display: table-cell;
+    width: 32px;
+    text-align: center;
+    vertical-align: middle;
+    padding-right: 18px;
+
+    > i,
+    > span {
+      font-size: 22px;
+    }
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 0 5px;
+  }
+
+  .message {
+    display: table-cell;
+  }
+}

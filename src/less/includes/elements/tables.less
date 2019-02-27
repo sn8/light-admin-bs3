@@ -1,0 +1,21 @@
+.table {
+  > thead {
+    > tr {
+      th, td {
+        font-weight: 400;
+      }
+    }
+  }
+
+  > tbody {
+    td {
+      font-weight: 300;
+    }
+  }
+
+  &.no-first-border {
+    tbody > tr:first-child > td {
+      border-top: unset;
+    }
+  }
+}

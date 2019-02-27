@@ -1,0 +1,45 @@
+<!-- @@master = layouts/main.html-->
+
+<!-- @@block = content-->
+      <div class="row">
+        <div class="col-lg-12 heading">
+          <h1 class="page-header">Calendar</h1>
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Calendar</li>
+          </ol>
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default no-border">
+            <div class="panel-body">
+              <div id='calendar'></div>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+<!-- @@close-->
+
+<!-- @@block = page-scripts-->
+  <script src="assets/vendor/fullcalendar/fullcalendar.min.js"></script>
+  <script>
+    $(function() {
+      $('#calendar').fullCalendar({
+        themeSystem: 'bootstrap3',
+        header: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'month,agendaWeek,agendaDay,listMonth'
+        },
+        editable: true,
+        eventLimit: true, // allow "more" link when too many events
+        events: 'https://fullcalendar.io/demo-events.json'
+      });
+    });
+  </script>
+<!-- @@close-->

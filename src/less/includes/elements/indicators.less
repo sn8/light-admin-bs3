@@ -1,0 +1,57 @@
+.indicator {
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  margin: 3px 5px;
+
+  &-primary {
+    background: @brand-primary;
+  }
+
+  &-success {
+    background: @brand-success;
+  }
+
+  &-info {
+    background: @brand-info;
+  }
+
+  &-warning {
+    background: @brand-warning;
+  }
+
+  &-danger {
+    background: @brand-danger;
+  }
+
+  // Themes
+  &.theme {
+    &-default {
+      background: #787DA7;
+    }
+
+    &-blue {
+      background: #3695DB;
+    }
+
+    &-red {
+      background: #F56163;
+    }
+
+    &-turquoise {
+      background: #64bda9;
+    }
+
+    &-yellow {
+      background: #F4C453;
+    }
+  }
+}
+
+.nav > li > a .indicator {
+  position: absolute;
+  top: 50%;
+  margin: -11px 0 0 0;
+  right: 11px;
+}

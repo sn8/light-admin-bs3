@@ -1,0 +1,44 @@
+// Mixins
+
+.panel-variant(@background, @color: #fff) {
+  color: @color;
+  background: @background;
+
+  &.collapsed {
+    color: @text-color;
+    background: unset;
+  }
+}
+
+.user-select-none() {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.feedback-state(@color: #ccc) {
+  .help-block,
+  .control-label,
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline,
+  .form-control-feedback,
+  &.radio label,
+  &.checkbox label,
+  &.radio-inline label,
+  &.checkbox-inline label {
+    color: lighten(@color, 15%);
+  }
+
+  .form-control {
+    border-color: lighten(@color, 25%);
+    .box-shadow(unset);
+    &:focus {
+      border-color: lighten(@color, 7%);
+      .box-shadow(unset);
+    }
+  }
+}

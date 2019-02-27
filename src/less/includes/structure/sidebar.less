@@ -1,0 +1,146 @@
+// Sidebar
+
+.sidebar {
+  position: absolute;
+  top: @topbar-height;
+  left: 0;
+  padding-bottom: @topbar-height;
+  z-index: 10;
+  width: @sidebar-width;
+  height: calc(~"100%" - @topbar-height);
+  .transition(@transition-linear);
+  background: @body-bg;
+
+  .sidebar-nav {
+    margin-bottom: 5px;
+
+    ul {
+      li {
+        a {
+          margin: 8px 8px 0 8px;
+          .transition(@transition);
+          border-radius: @border-radius-base;
+          color: @sidebar-nav-link;
+
+          &:focus {
+            background: 0;
+            outline: 0;
+          }
+
+          &:hover {
+            background: @sidebar-active-background;
+          }
+
+          p {
+            margin: 0 0 0 35px;
+            overflow: hidden;
+            white-space: nowrap;
+            .transition(@transition-linear);
+            .translate3d(0px, 0, 0);
+            .opacity(1);
+
+            .caret {
+              position: absolute;
+              top: 10px;
+              right: 0;
+              .transition(@transition);
+            }
+          }
+
+          i {
+            float: left;
+            width: 30px;
+            font-size: 22px;
+          }
+
+          .badge {
+            position: absolute;
+            top: 14px;
+            right: 10px;
+            font-size: 10px;
+            padding: 1px 5px 2px;
+          }
+        }
+      }
+
+      li.active {
+        > a {
+          background: @sidebar-active-background;
+
+          .caret {
+            .rotate(180deg);
+          }
+        }
+      }
+    }
+
+    > ul > li {
+      // First level
+      > a {
+        font-weight: 600;
+        font-size: 12px;
+        text-transform: uppercase;
+        line-height: 22px;
+      }
+
+      > ul > li {
+        // Second level
+        > a {
+          font-weight: 400;
+          font-size: @font-size-base;
+          line-height: 18px;
+          margin-top: 6px;
+
+          > i {
+            font-size: 18px;
+            margin: 0 0 0 2px;
+          }
+
+          .caret {
+            top: 8px;
+          }
+        }
+
+        // Third level
+        > ul > li > a {
+          font-weight: 300;
+          font-size: @font-size-base;
+          line-height: 16px;
+          margin-top: 5px;
+
+          > i {
+            font-size: @font-size-base;
+            margin: 0 0 0 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+body.sidebar-collapsed {
+  #page-wrapper {
+    margin: 0 0 0 @sidebar-collapsed-width;
+  }
+
+  .sidebar {
+    width: @sidebar-collapsed-width;
+
+    .sidebar-nav > .nav > li > a {
+      > p {
+        margin: 0;
+        .translate3d(-25px, 0, 0);
+        .opacity(0);
+      }
+
+      > .badge {
+        top: 25px;
+        right: 4px;
+      }
+    }
+  }
+}
+
+#wrapper.fixed-sidebar .sidebar {
+  position: fixed;
+}

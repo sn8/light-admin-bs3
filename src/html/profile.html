@@ -1,0 +1,154 @@
+<!-- @@master = layouts/main.html-->
+
+<!-- @@block = content-->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel profile-panel no-border">
+            <div class="panel-body">
+              <div class="avatar">
+                <img src="assets/img/avatar3.jpg">
+              </div>
+              <div class="text">
+                <h1>John Doe</h1>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <!-- .panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              About me
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <table class="table no-first-border">
+                <tbody>
+                  <tr>
+                    <td class="text-muted">Ocupation:</td>
+                    <td>Developer</td>
+                  </tr>
+                  <tr>
+                    <td class="text-muted">Birthday:</td>
+                    <td>10 November 1985</td>
+                  </tr>
+                  <tr>
+                    <td class="text-muted">Mobile:</td>
+                    <td>(123) 456-7890</td>
+                  </tr>
+                  <tr>
+                    <td class="text-muted">Location:</td>
+                    <td>San Francisco, CA</td>
+                  </tr>
+                  <tr>
+                    <td class="text-muted">Website:</td>
+                    <td>website.com</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="#" class="btn btn-block btn-primary">Edit</a>
+            </div>
+            <!-- .panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-8">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Development Activity
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <canvas id="line-chart"></canvas>
+            </div>
+            <!-- .panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-md-8 -->
+      </div>
+      <!-- /.row -->
+<!-- @@close-->
+
+<!-- @@block = page-scripts-->
+  <script>
+    window.onload = function() {
+      window.lineChart = new Chart(document.getElementById('line-chart').getContext('2d'), {
+        type: 'line',
+        data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          datasets: [{
+            label: 'First dataset',
+            backgroundColor: window.chartColors.red,
+            borderColor: window.chartColors.red,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ],
+            fill: false,
+          }, {
+            label: 'Second dataset',
+            fill: false,
+            backgroundColor: window.chartColors.blue,
+            borderColor: window.chartColors.blue,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ],
+          }]
+        },
+        options: {
+          responsive: true,
+          title: {
+            display: false,
+          },
+          tooltips: {
+            mode: 'index',
+            intersect: false,
+          },
+          hover: {
+            mode: 'nearest',
+            intersect: true
+          },
+          legend: {
+            display: false
+          },
+          scales: {
+            xAxes: [{
+              display: true,
+              scaleLabel: {
+                display: false,
+                labelString: 'Month'
+              }
+            }],
+            yAxes: [{
+              display: true,
+              scaleLabel: {
+                display: false,
+                labelString: 'Value'
+              }
+            }]
+          }
+        }
+      });
+    };
+  </script>
+<!-- @@close-->

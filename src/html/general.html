@@ -1,0 +1,392 @@
+<!-- @@master = layouts/main.html-->
+
+<!-- @@block = content-->
+      <div class="row">
+        <div class="col-lg-12 heading">
+          <h1 class="page-header">General</h1>
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">General</li>
+          </ol>
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Images
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-4 text-center">
+                  <img src="assets/img/140x140.png" class="img-rounded">
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="assets/img/140x140.png" class="img-circle">
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="assets/img/140x140.png" class="img-thumbnail">
+                </div>
+              </div>
+              <br><br>
+              <pre>
+&lt;img src="..." alt="..." class="img-rounded"&gt;
+&lt;img src="..." alt="..." class="img-circle"&gt;
+&lt;img src="..." alt="..." class="img-thumbnail"&gt;</pre>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Labels, Badges and Indicators
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <table class="table">
+                <thead>
+                <tr>
+                  <th>Type</th>
+                  <th class="text-center">Label</th>
+                  <th class="text-center">Badge</th>
+                  <th class="text-center">Indicator</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Default</td>
+                  <td class="text-center"><span class="label label-default">Default</span></td>
+                  <td class="text-center"><span class="badge">4</span></td>
+                  <td class="text-center">-</td>
+                </tr>
+                <tr>
+                  <td>Primary</td>
+                  <td class="text-center"><span class="label label-primary">Primary</span></td>
+                  <td class="text-center"><span class="badge badge-primary">10</span></td>
+                  <td class="text-center"><span class="indicator indicator-primary"></span></td>
+                </tr>
+                <tr>
+                  <td>Success</td>
+                  <td class="text-center"><span class="label label-success">Success</span></td>
+                  <td class="text-center"><span class="badge badge-success">23</span></td>
+                  <td class="text-center"><span class="indicator indicator-success"></span></td>
+                </tr>
+                <tr>
+                  <td>Info</td>
+                  <td class="text-center"><span class="label label-info">Info</span></td>
+                  <td class="text-center"><span class="badge badge-info">7</span></td>
+                  <td class="text-center"><span class="indicator indicator-info"></span></td>
+                </tr>
+                <tr>
+                  <td>Warning</td>
+                  <td class="text-center"><span class="label label-warning">Warning</span></td>
+                  <td class="text-center"><span class="badge badge-warning">2</span></td>
+                  <td class="text-center"><span class="indicator indicator-warning"></span></td>
+                </tr>
+                <tr>
+                  <td>Danger</td>
+                  <td class="text-center"><span class="label label-danger">Danger</span></td>
+                  <td class="text-center"><span class="badge badge-danger">32</span></td>
+                  <td class="text-center"><span class="indicator indicator-danger"></span></td>
+                </tr>
+                </tbody>
+              </table>
+              <pre>
+&lt;span class="label label-default"&gt;...&lt;/span&gt;
+&lt;span class="label label-primary"&gt;...&lt;/span&gt;
+&lt;span class="label label-success"&gt;...&lt;/span&gt;
+&lt;span class="label label-info"&gt;...&lt;/span&gt;
+&lt;span class="label label-warning"&gt;...&lt;/span&gt;
+&lt;span class="label label-danger"&gt;...&lt;/span&gt;
+
+&lt;span class="badge badge-default"&gt;...&lt;/span&gt;
+&lt;span class="badge badge-primary"&gt;...&lt;/span&gt;
+&lt;span class="badge badge-success"&gt;...&lt;/span&gt;
+&lt;span class="badge badge-info"&gt;...&lt;/span&gt;
+&lt;span class="badge badge-warning"&gt;...&lt;/span&gt;
+&lt;span class="badge badge-danger"&gt;...&lt;/span&gt;
+
+&lt;span class="indicator indicator-primary"&gt;&lt;/span&gt;
+&lt;span class="indicator indicator-success"&gt;&lt;/span&gt;
+&lt;span class="indicator indicator-info"&gt;&lt;/span&gt;
+&lt;span class="indicator indicator-warning"&gt;&lt;/span&gt;
+&lt;span class="indicator indicator-danger"&gt;&lt;/span&gt;</pre>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Progress bars & Loader
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <h4>Progress bars</h4>
+              <div class="progress">
+                <div style="width: 30%" class="progress-bar progress-bar-primary">Simple 30%</div>
+              </div>
+              <div class="progress">
+                <div style="width: 50%" class="progress-bar progress-bar-primary progress-bar-striped">Striped 50%</div>
+              </div>
+              <div class="progress">
+                <div style="width: 60%" class="progress-bar progress-bar-primary progress-bar-striped active">Animated 60%</div>
+              </div>
+              <div class="progress">
+                <div style="width: 30%" class="progress-bar progress-bar-primary progress-bar-striped">30%</div>
+                <div style="width: 25%" class="progress-bar progress-bar-info progress-bar-striped">25%</div>
+                <div style="width: 20%" class="progress-bar progress-bar-warning progress-bar-striped">20%</div>
+                <div style="width: 15%" class="progress-bar progress-bar-danger progress-bar-striped">15%</div>
+              </div>
+              <br>
+              <h4>Loader</h4>
+              <div class="loader-container">
+                <div class="loader"></div>
+              </div>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-7 -->
+
+        <div class="col-lg-5">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Breadcrumbs
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <ol class="breadcrumb">
+                <li class="active">Home</li>
+              </ol>
+              <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Menu</li>
+              </ol>
+              <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li class="active">Sub Menu</li>
+              </ol>
+              <pre>
+&lt;ol class="breadcrumb"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a>&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Menu&lt;/a>&lt;/li&gt;
+  &lt;li class="active"&gt;Sub Menu&lt;/li&gt;
+&lt;/ol&gt;</pre>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Pagination
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <h4>Default</h4>
+              <ul class="pagination pagination-lg" style="margin-top: 0;">
+                <li class="page-item">
+                  <a class="page-link" href="#">«</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">4</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">5</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">»</a>
+                </li>
+              </ul>
+              <br>
+              <ul class="pagination" style="margin-top: 0;">
+                <li class="page-item">
+                  <a class="page-link" href="#">«</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">4</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">5</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">»</a>
+                </li>
+              </ul>
+              <br>
+              <ul class="pagination pagination-sm" style="margin-top: 0;">
+                <li class="page-item">
+                  <a class="page-link" href="#">«</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">4</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">5</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">»</a>
+                </li>
+              </ul>
+              <br>
+              <h4>Without border</h4>
+              <ul class="pagination pagination-lg no-border" style="margin-top: 0;">
+                <li class="page-item">
+                  <a class="page-link" href="#">«</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">4</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">5</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">»</a>
+                </li>
+              </ul>
+              <br>
+              <ul class="pagination no-border" style="margin-top: 0;">
+                <li class="page-item">
+                  <a class="page-link" href="#">«</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">4</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">5</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">»</a>
+                </li>
+              </ul>
+              <br>
+              <ul class="pagination pagination-sm no-border" style="margin-top: 0;">
+                <li class="page-item">
+                  <a class="page-link" href="#">«</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">4</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">5</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">»</a>
+                </li>
+              </ul>
+              <pre>
+&lt;ul class="pagination pagination-lg"&gt;...&lt;/ul&gt;
+&lt;ul class="pagination"&gt;...&lt;/ul&gt;
+&lt;ul class="pagination pagination-sm"&gt;...&lt;/ul&gt;
+
+&lt;ul class="pagination pagination-lg no-border"&gt;...&lt;/ul&gt;
+&lt;ul class="pagination no-border"&gt;...&lt;/ul&gt;
+&lt;ul class="pagination pagination-sm no-border"&gt;...&lt;/ul&gt;</pre>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              List Group
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <div class="list-group">
+                <a href="#" class="list-group-item active">
+                  Cras justo odio
+                  <span class="badge">23</span>
+                </a>
+                <a href="#" class="list-group-item">
+                  Dapibus ac facilisis in
+                  <span class="badge">18</span>
+                </a>
+                <a href="#" class="list-group-item">Morbi leo risus</a>
+                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item disabled">Vestibulum at eros</a>
+              </div>
+              <pre>
+&lt;div class="list-group"&gt;
+  &lt;a href="#" class="list-group-item active"&gt;
+    Cras justo odio
+    &lt;span class="badge"&gt;23&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a href="#" class="list-group-item"&gt;
+    Dapibus ac facilisis in
+    &lt;span class="badge"&gt;18&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a href="#" class="list-group-item"&gt;Morbi leo risus&lt;/a&gt;
+  &lt;a href="#" class="list-group-item"&gt;Porta ac consectetur ac&lt;/a&gt;
+  &lt;a href="#" class="list-group-item disabled"&gt;Vestibulum at eros&lt;/a&gt;
+&lt;/div&gt;</pre>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-5 -->
+      </div>
+      <!-- /.row -->
+<!-- @@close-->

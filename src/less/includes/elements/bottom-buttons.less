@@ -1,0 +1,51 @@
+.bottom-buttons {
+  width: 100px;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 10;
+
+  > a {
+    float: right;
+    position: relative;
+    display: block;
+    width: 45px;
+    height: 35px;
+    margin-left: 5px;
+    border-radius: @border-radius-base;
+    background: @scrolltotop-background;
+    color: @scrolltotop-font-color;
+    font-size: 22px;
+    text-align: center;
+    opacity: 0.63;
+    cursor: pointer;
+    .user-select-none();
+
+    > i {
+      vertical-align: middle;
+    }
+
+    > .counter {
+      position: absolute;
+      bottom: 6px;
+      right: 6px;
+      padding: 0px 3px;
+      font-size: 9px;
+      font-weight: 700;
+      border-radius: 8px;
+      background: @scrolltotop-font-color;
+      color: @scrolltotop-background;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.80;
+      color: @scrolltotop-font-color;
+      text-decoration: none;
+    }
+
+    &.scroll-to-top {
+      display: none;
+    }
+  }
+}

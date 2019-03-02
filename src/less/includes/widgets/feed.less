@@ -1,8 +1,32 @@
 .feed-list {
   > .list-group-item {
+    border-bottom: unset;
+    border-left: unset;
+    border-right: unset;
 
-    .img-thumbnail {
-      width: 130px;
+    &:first-child {
+      border-top: unset;
+    }
+
+    .feed-item-content {
+      -ms-flex: 1;
+      flex: 1;
+      padding-top: 9px;
+      margin-left: 52px;
+
+      .mini-gallery,
+      .well {
+        margin: 8px 0 5px;
+      }
+
+      .mini-gallery img {
+        width: 130px;
+        margin-right: 3px;
+      }
+
+      .buttons {
+        margin-top: 8px;
+      }
     }
   }
 }

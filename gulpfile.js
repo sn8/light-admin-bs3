@@ -20,8 +20,9 @@ const paths = {
   dist: 'dist',
   distCss: 'dist/assets/css',
   distJs: 'dist/assets/js',
+  distImages: 'dist/assets/images',
   distFonts: 'dist/assets/fonts',
-  distVendor: 'dist/assets/vendor'
+  distVendor: 'dist/assets/vendor',
 };
 
 // Set the banner content
@@ -132,6 +133,12 @@ gulp.task('copy', () => {
 
   gulp.src(['node_modules/metismenu/dist/*'])
     .pipe(gulp.dest(`${paths.distVendor}/metisMenu`));
+
+  gulp.src(['node_modules/lightbox2/dist/js/**/*'])
+    .pipe(gulp.dest(`${paths.distVendor}/lightbox2`));
+
+  gulp.src(['node_modules/lightbox2/dist/images/**/*'])
+    .pipe(gulp.dest(`${paths.distImages}/`));
 });
 
 gulp.task('default', ['copy', 'less', 'js', 'minify-css', 'minify-js', 'extend']);

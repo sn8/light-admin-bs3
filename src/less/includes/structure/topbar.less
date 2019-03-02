@@ -316,6 +316,10 @@ body.sidebar-collapsed {
     padding-left: 0px;
   }
 
+  .toggle-sidebar {
+    display: none;
+  }
+
   .navbar-header {
     width: @without-sidebar-width;
     background: @topbar-background;
@@ -334,6 +338,14 @@ body.sidebar-collapsed {
 .navbar-filled {
   &.navbar-default {
     background: @brand-primary;
+  }
+
+  .navbar-header {
+    background: @brand-primary !important;
+
+    .navbar-brand {
+      color: @navbar-filled-link-color !important;
+    }
   }
 
   .navbar-nav {

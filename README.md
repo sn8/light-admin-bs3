@@ -3,10 +3,10 @@
 **Light Admin** is an a lightweight bootstrap 3.x admin panel template.
 
 ### Color themes
-* Default (purple)
+* Default (turquoise)
 * Blue
 * Red
-* Turquoise
+* Purple
 * Yellow
 
 ### Pages
@@ -35,6 +35,7 @@
 * Scroll-to-top button
 * Chat
 * Todo-list
+* Events feed
 
 ## Credits
 
@@ -53,6 +54,7 @@
 * Bootstrap Datetimepicker - https://eonasdan.github.io/bootstrap-datetimepicker/
 * Bootstrap Notify - http://bootstrap-notify.remabledesigns.com/
 * Fullcalendar - https://fullcalendar.io/
+* Lightbox - https://lokeshdhakar.com/projects/lightbox2/
 
 ## Directory Structure
 

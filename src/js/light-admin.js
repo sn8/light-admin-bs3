@@ -126,6 +126,12 @@ $(function() {
   $('.modal-dialog').parent().on('show.bs.modal', function(e){
     $(e.relatedTarget.attributes['data-target'].value).appendTo('body');
   });
+
+  /* Misc */
+  $('.select-all-checkboxes').change(function() {
+    const checkboxes = $(this).closest('table').find(':checkbox').not($(this));
+    checkboxes.prop('checked', $(this).is(':checked'));
+  });
 });
 
 /* Global Variables & Functions */

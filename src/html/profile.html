@@ -21,7 +21,7 @@
       </div>
       <!-- /.row -->
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-5">
           <div class="panel panel-default no-border">
             <div class="panel-heading no-border">
               About me
@@ -58,9 +58,7 @@
             <!-- .panel-body -->
           </div>
           <!-- /.panel -->
-        </div>
-        <!-- /.col-md-4 -->
-        <div class="col-md-8">
+
           <div class="panel panel-default no-border">
             <div class="panel-heading no-border">
               Development Activity
@@ -70,6 +68,122 @@
               <canvas id="line-chart"></canvas>
             </div>
             <!-- .panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-7">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Activities
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <div class="list-group feed-list">
+                <div class="list-group-item">
+                  <div class="pull-right">
+                    <div class="text-muted small">
+                      1h ago
+                    </div>
+                  </div>
+                  <div class="pull-left user-avatar">
+                    <img class="avatar" src="assets/images/avatar4.jpg">
+                  </div>
+                  <div class="feed-item-content">
+                    <strong>Jeffrey Cain</strong> started following <strong>Anne Mcgee</strong>.
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="list-group-item">
+                  <div class="pull-right">
+                    <div class="text-muted small">
+                      2h ago
+                    </div>
+                  </div>
+                  <div class="pull-left user-avatar">
+                    <img class="avatar" src="assets/images/avatar2.jpg">
+                  </div>
+                  <div class="feed-item-content">
+                    <strong>Anne Mcgee</strong> added 3 photos.
+                    <div class="mini-gallery">
+                      <a href="assets/images/photo1-large.jpeg" data-lightbox="gallery1"><img class="img-rounded" src="assets/images/photo1.jpeg"></a>
+                      <a href="assets/images/photo2-large.jpeg" data-lightbox="gallery1"><img class="img-rounded" src="assets/images/photo2.jpeg"></a>
+                      <a href="assets/images/photo3-large.jpeg" data-lightbox="gallery1"><img class="img-rounded" src="assets/images/photo3.jpeg"></a>
+                    </div>
+                    <div class="buttons">
+                      <button type="button" class="btn btn-xs btn-outline btn-default">
+                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                        Like · <small>17</small>
+                      </button>
+                      <button type="button" class="btn btn-xs btn-outline btn-default">
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        Add to favorites
+                      </button>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="list-group-item">
+                  <div class="pull-right">
+                    <div class="text-muted small">
+                      4h ago
+                    </div>
+                  </div>
+                  <div class="pull-left user-avatar">
+                    <img class="avatar" src="assets/images/avatar1.jpg">
+                  </div>
+                  <div class="feed-item-content">
+                    <strong>Sam Lyons</strong> started following <strong>Pat Harris</strong>.
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="list-group-item">
+                  <div class="pull-right">
+                    <div class="text-muted small">
+                      5h ago
+                    </div>
+                  </div>
+                  <div class="pull-left user-avatar">
+                    <img class="avatar" src="assets/images/avatar3.jpg">
+                  </div>
+                  <div class="feed-item-content">
+                    <strong>John Doe</strong> posted a message.
+                    <div class="well well-sm">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur recusandae a mollitia magni in. Velit numquam possimus eum delectus maiores dicta perspiciatis quae aperiam dolores facere, doloribus non, iusto, sit.
+                    </div>
+                    <div class="buttons">
+                      <button type="button" class="btn btn-xs btn-outline btn-default">
+                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                        Like · <small>27</small>
+                      </button>
+                      <button type="button" class="btn btn-xs btn-outline btn-default">
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        Add to favorites
+                      </button>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="list-group-item">
+                  <div class="pull-right">
+                    <div class="text-muted small">
+                      12h ago
+                    </div>
+                  </div>
+                  <div class="pull-left user-avatar">
+                    <img class="avatar" src="assets/images/default-user-image.png">
+                  </div>
+                  <div class="feed-item-content">
+                    <strong>Michelle Steele</strong> started following <strong>Jeff Wilson</strong>.
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+              <button class="btn btn-sm btn-primary btn-block">
+                Load more
+              </button>
+            </div>
+            <!-- /.panel-body -->
           </div>
           <!-- /.panel -->
         </div>
@@ -84,7 +198,7 @@
       window.lineChart = new Chart(document.getElementById('line-chart').getContext('2d'), {
         type: 'line',
         data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          labels: ['January', 'February', 'March', 'April'],
           datasets: [{
             label: 'First dataset',
             backgroundColor: window.chartColors.red,
@@ -94,9 +208,6 @@
               randomScalingFactor(),
               randomScalingFactor(),
               randomScalingFactor(),
-              randomScalingFactor(),
-              randomScalingFactor(),
-              randomScalingFactor()
             ],
             fill: false,
           }, {
@@ -109,9 +220,6 @@
               randomScalingFactor(),
               randomScalingFactor(),
               randomScalingFactor(),
-              randomScalingFactor(),
-              randomScalingFactor(),
-              randomScalingFactor()
             ],
           }]
         },

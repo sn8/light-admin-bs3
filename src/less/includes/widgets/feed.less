@@ -11,8 +11,12 @@
     .feed-item-content {
       -ms-flex: 1;
       flex: 1;
-      padding-top: 9px;
+      padding-top: 2px;
       margin-left: 52px;
+
+      @media screen and (min-width: 420px) {
+        padding-top: 9px;
+      }
 
       .mini-gallery,
       .well {
@@ -22,10 +26,15 @@
       .mini-gallery img {
         width: 130px;
         margin-right: 3px;
+        margin-bottom: 3px;
       }
 
       .buttons {
         margin-top: 8px;
+
+        .btn {
+          margin-bottom: 3px;
+        }
       }
     }
   }

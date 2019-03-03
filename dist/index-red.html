@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Light Admin - Bootstrap Admin Template</title>
+
+  <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico" />
+
+  <!-- Main style -->
+  <link href="assets/css/style-red.css" rel="stylesheet">
+
+  <style>body { display: none; }</style>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="hidden with-overlay-scrollbars">
+
+  <div id="wrapper" class="fixed-sidebar fixed-topbar">
+
+    <!-- Topbar -->
+    <nav id="topbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <a class="toggle-sidebar"><i class="ti-menu"></i></a>
+        <a class="navbar-brand" href="index.html">
+          <span>Light Admin</span>
+        </a>
+      </div>
+      <!-- /.navbar-header -->
+      <ul class="nav navbar-nav navbar-left search-nav">
+        <li class="search">
+          <i class="ti-search"></i>
+          <form>
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right profile-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle user" data-toggle="dropdown" href="#">
+            <img class="avatar" src="assets/images/avatar3.jpg">
+            <span class="name hidden-sm hidden-xs">John Doe</span>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu dropdown-user">
+            <li><a href="profile.html"><i class="ti-user"></i> User Profile</a></li>
+            <li><a href="#"><i class="ti-settings"></i> Settings</a></li>
+            <li><a href="#"><i class="ti-help-alt"></i> Help</a></li>
+            <li class="divider"></li>
+            <li><a href="login.html"><i class="ti-power-off"></i> Logout</a></li>
+          </ul>
+          <!-- /.dropdown-user -->
+        </li>
+        <!-- /.dropdown -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right icons-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="ti-bell"></i>
+            <span class="indicator indicator-warning"></span>
+          </a>
+          <ul class="dropdown-menu dropdown-notifications">
+            <li>
+              <a href="#">
+                <div>
+                  <i class="ti-comment-alt"></i> <span class="title">New Comment</span>
+                  <span class="pull-right text-muted small">10:24</span>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <i class="ti-alert"></i> <span class="title">Server Alert</span>
+                  <span class="pull-right text-muted small">10:21</span>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <i class="ti-email"></i> <span class="title">New Email</span>
+                    <span class="pull-right text-muted small">10:19</span>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <i class="ti-flag-alt-2"></i> <span class="title">New Task</span>
+                  <span class="pull-right text-muted small">10:16</span>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <i class="ti-server"></i> <span class="title">Server Rebooted</span>
+                  <span class="pull-right text-muted small">10:14</span>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a class="text-center" href="#">
+                <small>View all notifications</small>
+              </a>
+            </li>
+          </ul>
+          <!-- /.dropdown-notifications -->
+        </li>
+        <!-- /.dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="ti-flag-alt-2"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-tasks">
+            <li>
+              <a href="#">
+                <div>
+                  <p>
+                    <span class="title">Task 1</span>
+                    <span class="pull-right text-muted">20%</span>
+                  </p>
+                  <div class="progress progress-striped progress-mini active">
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                         aria-valuemax="100" style="width: 20%">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <p>
+                    <span class="title">Task 2</span>
+                    <span class="pull-right text-muted">40%</span>
+                  </p>
+                  <div class="progress progress-striped progress-mini active">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                         aria-valuemax="100" style="width: 40%">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <p>
+                    <span class="title">Task 3</span>
+                    <span class="pull-right text-muted">60%</span>
+                  </p>
+                  <div class="progress progress-striped progress-mini active">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                         aria-valuemax="100" style="width: 60%">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <p>
+                    <span class="title">Task 4</span>
+                    <span class="pull-right text-muted">80%</span>
+                  </p>
+                  <div class="progress progress-striped progress-mini active">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                         aria-valuemax="100" style="width: 80%">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a class="text-center" href="#">
+                <small>View all tasks</small>
+              </a>
+            </li>
+          </ul>
+          <!-- /.dropdown-tasks -->
+        </li>
+        <!-- /.dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="ti-settings"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-settings non-closing-dropdown">
+            <li>
+              <a>
+                White header
+                <div class="pull-right">
+                  <div class="onoffswitch onoffswitch-sm">
+                    <input type="checkbox" name="white-header-switch" class="onoffswitch-checkbox toggle-white-header" id="white-header-switch">
+                    <label class="onoffswitch-label" for="white-header-switch">
+                      <span class="onoffswitch-inner"></span>
+                      <span class="onoffswitch-switch"></span>
+                    </label>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a>
+                Filled topbar
+                <div class="pull-right">
+                  <div class="onoffswitch onoffswitch-sm">
+                    <input type="checkbox" name="filled-topbar-switch" class="onoffswitch-checkbox toggle-filled-topbar" id="filled-topbar-switch">
+                    <label class="onoffswitch-label" for="filled-topbar-switch">
+                      <span class="onoffswitch-inner"></span>
+                      <span class="onoffswitch-switch"></span>
+                    </label>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a>
+                Mini sidebar
+                <div class="pull-right">
+                  <div class="onoffswitch onoffswitch-sm">
+                    <input type="checkbox" name="mini-sidebar-switch" class="onoffswitch-checkbox toggle-sidebar" id="mini-sidebar-switch">
+                    <label class="onoffswitch-label" for="mini-sidebar-switch">
+                      <span class="onoffswitch-inner"></span>
+                      <span class="onoffswitch-switch"></span>
+                    </label>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li class="text-center dropdown-title">
+              Themes:
+            </li>
+            <li>
+              <a href="index.html">
+                <div>
+                  <span class="indicator theme-default"></span>
+                  <span class="title">Default theme (turquoise)</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="index-blue.html">
+                <div>
+                  <span class="indicator theme-blue"></span>
+                  <span class="title">Blue theme</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="index-red.html">
+                <div>
+                  <span class="indicator theme-red"></span>
+                  <span class="title">Red theme</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="index-purple.html">
+                <div>
+                  <span class="indicator theme-purple"></span>
+                  <span class="title">Purple theme</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="index-yellow.html">
+                <div>
+                  <span class="indicator theme-yellow"></span>
+                  <span class="title">Yellow theme</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- /.dropdown-notifications -->
+        </li>
+        <!-- /.dropdown -->
+      </ul>
+    </nav>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar overlay-scrollbar" role="navigation">
+      <div class="sidebar-nav">
+        <ul class="nav" id="side-menu">
+          <li>
+            <a href="index.html">
+              <i class="ti-stats-up"></i>
+              <p>Dashboard</p>
+              <span class="badge badge-danger">
+                32
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="charts.html">
+              <i class="ti-pie-chart"></i>
+              <p>
+                Charts
+              </p>
+              <span class="badge badge-warning">
+                21
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="crud.html">
+              <i class="ti-write"></i>
+              <p>CRUD</p>
+            </a>
+          </li>
+          <li>
+            <a href="tables.html">
+              <i class="ti-layout"></i>
+              <p>Tables</p>
+            </a>
+          </li>
+          <li>
+            <a href="forms.html">
+              <i class="ti-pencil-alt"></i>
+              <p>Forms</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ti-widget"></i>
+              <p>
+                UI Elements
+                <span class="caret"></span>
+              </p>
+            </a>
+            <ul class="nav">
+              <li>
+                <a href="general.html"><p>General</p></a>
+              </li>
+              <li>
+                <a href="panels.html"><p>Panels</p></a>
+              </li>
+              <li>
+                <a href="tabs_accordions.html"><p>Tabs and Accordions</p></a>
+              </li>
+              <li>
+                <a href="buttons.html"><p>Buttons</p></a>
+              </li>
+              <li>
+                <a href="modals.html"><p>Modals</p></a>
+              </li>
+              <li>
+                <a href="notifications.html"><p>Notifications</p></a>
+              </li>
+              <li>
+                <a href="typography.html"><p>Typography</p></a>
+              </li>
+              <li>
+                <a href="icons.html"><p>Icons</p></a>
+              </li>
+              <li>
+                <a href="grid.html"><p>Grid</p></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ti-layers"></i>
+              <p>
+                Pages
+                <span class="caret"></span>
+              </p>
+            </a>
+            <ul class="nav nav-second-level">
+              <li>
+                <a href="blank.html"><p>Blank Page</p></a>
+              </li>
+              <li>
+                <a href="404.html"><p>404 Page</p></a>
+              </li>
+              <li>
+                <a href="login.html"><p>Login</p></a>
+              </li>
+              <li>
+                <a href="signup.html"><p>Sign Up</p></a>
+              </li>
+              <li>
+                <a href="forgot-password.html"><p>Forgot Password</p></a>
+              </li>
+              <li>
+                <a href="profile.html"><p>Profile</p></a>
+              </li>
+              <li>
+                <a href="calendar.html"><p>Calendar</p></a>
+              </li>
+              <li>
+                <a href="gallery.html"><p>Gallery</p></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ti-layout-slider"></i>
+              <p>
+                Layouts
+                <span class="caret"></span>
+              </p>
+            </a>
+            <ul class="nav nav-second-level">
+              <li>
+                <a href="without-sidebar.html">
+                  <p>Without sidebar</p>
+                </a>
+              </li>
+              <li>
+                <a href="non-fixed-sidebar.html">
+                  <p>Non-fixed sidebar</p>
+                </a>
+              </li>
+              <li>
+                <a href="non-fixed-topbar.html">
+                  <p>Non-fixed topbar</p>
+                </a>
+              </li>
+              <li>
+                <a href="native-scrollbar.html">
+                  <p>Native scrollbar</p>
+                </a>
+              </li>
+              <li>
+                <a href="white-header.html">
+                  <p>White header</p>
+                </a>
+              </li>
+              <li>
+                <a href="filled-topbar.html">
+                  <p>Filled topbar</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ti-arrow-circle-down"></i>
+              <p>
+                3-Level Dropdown
+                <span class="caret"></span>
+              </p>
+            </a>
+            <ul class="nav">
+              <li>
+                <a href="#">
+                  <i class="ti-arrow-circle-right"></i>
+                  <p>Second Level Item</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="ti-arrow-circle-right"></i>
+                  <p>Second Level Item</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="ti-arrow-circle-down"></i>
+                  <p>
+                    Third Level
+                    <span class="caret"></span>
+                  </p>
+                </a>
+                <ul class="nav">
+                  <li>
+                    <a href="#">
+                      <i class="ti-arrow-circle-right"></i>
+                      <p>Third Level Item</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-arrow-circle-right"></i>
+                      <p>Third Level Item</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-arrow-circle-right"></i>
+                      <p>Third Level Item</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-arrow-circle-right"></i>
+                      <p>Third Level Item</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="page-wrapper">
+
+<div class="row">
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-xs-3 icon">
+            <i class="ti-stats-up icon-huge icon-success"></i>
+          </div>
+          <div class="col-xs-9 text-right">
+            <div class="counter">256</div>
+            <div class="description">New Orders</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-xs-3 icon">
+            <i class="ti-user icon-huge icon-info"></i>
+          </div>
+          <div class="col-xs-9 text-right">
+            <div class="counter">810</div>
+            <div class="description">New Users</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-xs-3 icon">
+            <i class="ti-pulse icon-huge icon-warning"></i>
+          </div>
+          <div class="col-xs-9 text-right">
+            <div class="counter">26%</div>
+            <div class="description">Server Load</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-xs-3 icon">
+            <i class="ti-comments icon-huge icon-danger"></i>
+          </div>
+          <div class="col-xs-9 text-right">
+            <div class="counter">27</div>
+            <div class="description">Support Tickets</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.row -->
+<div class="row">
+  <div class="col-md-7">
+    <div class="panel panel-default no-border">
+      <div class="panel-heading no-border">
+        Site Visits
+      </div>
+      <!-- /.panel-heading -->
+      <div class="panel-body">
+        <canvas id="area-chart"></canvas>
+      </div>
+      <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+
+    <div class="panel panel-default no-border">
+      <div class="panel-heading no-border">
+        Events Feed
+      </div>
+      <!-- /.panel-heading -->
+      <div class="panel-body">
+        <div class="list-group feed-list">
+          <div class="list-group-item">
+            <div class="pull-right">
+              <div class="text-muted small">
+                1h ago
+              </div>
+            </div>
+            <div class="pull-left user-avatar">
+              <img class="avatar" src="assets/images/avatar4.jpg">
+            </div>
+            <div class="feed-item-content">
+              <strong>Jeffrey Cain</strong> started following <strong>Anne Mcgee</strong>.
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="list-group-item">
+            <div class="pull-right">
+              <div class="text-muted small">
+                2h ago
+              </div>
+            </div>
+            <div class="pull-left user-avatar">
+              <img class="avatar" src="assets/images/avatar2.jpg">
+            </div>
+            <div class="feed-item-content">
+              <strong>Anne Mcgee</strong> added 3 photos.
+              <div class="mini-gallery">
+                <a href="assets/images/photo1-large.jpeg" data-lightbox="gallery1"><img class="img-rounded" src="assets/images/photo1.jpeg"></a>
+                <a href="assets/images/photo2-large.jpeg" data-lightbox="gallery1"><img class="img-rounded" src="assets/images/photo2.jpeg"></a>
+                <a href="assets/images/photo3-large.jpeg" data-lightbox="gallery1"><img class="img-rounded" src="assets/images/photo3.jpeg"></a>
+              </div>
+              <div class="buttons">
+                <button type="button" class="btn btn-xs btn-outline btn-default">
+                  <span class="glyphicon glyphicon-thumbs-up"></span>
+                  Like · <small>17</small>
+                </button>
+                <button type="button" class="btn btn-xs btn-outline btn-default">
+                  <span class="glyphicon glyphicon-star-empty"></span>
+                  Add to favorites
+                </button>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="list-group-item">
+            <div class="pull-right">
+              <div class="text-muted small">
+               4h ago
+              </div>
+            </div>
+            <div class="pull-left user-avatar">
+              <img class="avatar" src="assets/images/avatar1.jpg">
+            </div>
+            <div class="feed-item-content">
+              <strong>Sam Lyons</strong> started following <strong>Pat Harris</strong>.
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="list-group-item">
+            <div class="pull-right">
+              <div class="text-muted small">
+                5h ago
+              </div>
+            </div>
+            <div class="pull-left user-avatar">
+              <img class="avatar" src="assets/images/avatar3.jpg">
+            </div>
+            <div class="feed-item-content">
+              <strong>John Doe</strong> posted a message.
+              <div class="well well-sm">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur recusandae a mollitia magni in. Velit numquam possimus eum delectus maiores dicta perspiciatis quae aperiam dolores facere, doloribus non, iusto, sit.
+              </div>
+              <div class="buttons">
+                <button type="button" class="btn btn-xs btn-outline btn-default">
+                  <span class="glyphicon glyphicon-thumbs-up"></span>
+                  Like · <small>27</small>
+                </button>
+                <button type="button" class="btn btn-xs btn-outline btn-default">
+                  <span class="glyphicon glyphicon-star-empty"></span>
+                  Add to favorites
+                </button>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="list-group-item">
+            <div class="pull-right">
+              <div class="text-muted small">
+               12h ago
+              </div>
+            </div>
+            <div class="pull-left user-avatar">
+              <img class="avatar" src="assets/images/default-user-image.png">
+            </div>
+            <div class="feed-item-content">
+              <strong>Michelle Steele</strong> started following <strong>Jeff Wilson</strong>.
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <button class="btn btn-sm btn-primary btn-block">
+          Load more
+        </button>
+      </div>
+      <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+
+
+  </div>
+  <!-- /.col-md-7 -->
+  <div class="col-md-5">
+    <div class="panel panel-default no-border">
+      <div class="panel-heading no-border">
+        Email Statistics
+      </div>
+      <!-- /.panel-heading -->
+      <div class="panel-body">
+        <canvas id="pie-chart"></canvas>
+        <br>
+        <a class="btn btn-block btn-lg">View More</a>
+      </div>
+      <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+
+    <div class="panel panel-default no-border">
+      <div class="panel-heading no-border">
+        Projects
+      </div>
+      <!-- /.panel-heading -->
+      <div class="panel-body">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+            <tr>
+              <th style="width: 5%">#</th>
+              <th style="width: 30%">Name</th>
+              <th style="width: 65%">Progress</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                Lorem
+                <a class="btn btn-xs btn-link" href="#">
+                  <span class="glyphicon glyphicon-new-window"></span>
+                </a>
+              </td>
+              <td>
+                <div class="progress no-margin">
+                  <div class="progress-bar progress-bar-success" style="width: 35%">
+                    35%
+                  </div>
+                  <div class="progress-bar progress-bar-warning" style="width: 25%">
+                    25%
+                  </div>
+                  <div class="progress-bar progress-bar-danger" style="width: 17%">
+                    17%
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                Ipsum
+                <a class="btn btn-xs btn-link" href="#">
+                  <span class="glyphicon glyphicon-new-window text-small"></span>
+                </a>
+              </td>
+              <td>
+                <div class="progress no-margin">
+                  <div class="progress-bar progress-bar-success" style="width: 20%">
+                    20%
+                  </div>
+                  <div class="progress-bar progress-bar-warning" style="width: 25%">
+                    25%
+                  </div>
+                  <div class="progress-bar progress-bar-danger" style="width: 50%">
+                    50%
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                Dolor sit
+                <a class="btn btn-xs btn-link" href="#">
+                  <span class="glyphicon glyphicon-new-window text-small"></span>
+                </a>
+              </td>
+              <td>
+                <div class="progress no-margin">
+                  <div class="progress-bar progress-bar-success" style="width: 100%">
+                    100%
+                  </div>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- /.table-responsive -->
+      </div>
+      <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+
+    <div class="panel panel-default todo-panel no-border">
+      <div class="panel-heading no-border">
+        Todo
+      </div>
+      <!-- /.panel-heading -->
+      <div class="panel-body">
+        <div class="table-responsive">
+          <table class="table table-hover no-first-border">
+            <tbody>
+              <tr class="done">
+                <td>
+                  <div class="checkbox">
+                    <input class="styled styled-primary" checked="" type="checkbox">
+                    <label></label>
+                  </div>
+                </td>
+                <td class="text">Lorem ipsum dolor sit amet.</td>
+                <td class="controls">
+                  <button class="btn btn-xs btn-info">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                  </button>
+                  <button class="btn btn-xs btn-danger">
+                    <span class="glyphicon glyphicon-remove"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="checkbox">
+                    <input class="styled styled-primary" type="checkbox">
+                    <label></label>
+                  </div>
+                </td>
+                <td class="text">Velit numquam possimus eum delectus maiores dicta perspiciatis quae aperiam dolores facere, doloribus non, iusto, sit.</td>
+                <td class="controls">
+                  <button class="btn btn-xs btn-info">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                  </button>
+                  <button class="btn btn-xs btn-danger">
+                    <span class="glyphicon glyphicon-remove"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="done">
+                <td>
+                  <div class="checkbox">
+                    <input class="styled styled-primary" checked="" type="checkbox">
+                    <label></label>
+                  </div>
+                </td>
+                <td class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur recusandae a mollitia magni in.</td>
+                <td class="controls">
+                  <button class="btn btn-xs btn-info">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                  </button>
+                  <button class="btn btn-xs btn-danger">
+                    <span class="glyphicon glyphicon-remove"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="checkbox">
+                    <input class="styled styled-primary" type="checkbox">
+                    <label></label>
+                  </div>
+                </td>
+                <td class="text">Lorem ipsum dolor sit amet.</td>
+                <td class="controls">
+                  <button class="btn btn-xs btn-info">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                  </button>
+                  <button class="btn btn-xs btn-danger">
+                    <span class="glyphicon glyphicon-remove"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="done">
+                <td>
+                  <div class="checkbox">
+                    <input class="styled styled-primary" checked="" type="checkbox">
+                    <label></label>
+                  </div>
+                </td>
+                <td class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur recusandae a mollitia magni in.</td>
+                <td class="controls">
+                  <button class="btn btn-xs btn-info">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                  </button>
+                  <button class="btn btn-xs btn-danger">
+                    <span class="glyphicon glyphicon-remove"></span>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+  </div>
+  <!-- /.col-md-5 -->
+</div>
+<!-- /.row -->
+
+    </div>
+    <!-- /#page-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <div id="chat" class="chat-widget">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        Chat
+        <div class="pull-right">
+          <button type="button" class="close toggle-chat" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+      <!-- /.panel-heading -->
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="list-group contacts-list">
+            <a href="#" class="list-group-item">
+              <div class="pull-right">
+                <div class="text-muted time">
+                  10:01
+                </div>
+                <div class="badge">4</div>
+              </div>
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/avatar4.jpg">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Jeffrey Cain</div>
+                <div class="text-muted info">
+                  Velit numquam...
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item">
+              <div class="pull-right">
+                <div class="text-muted time">
+                  10.08
+                </div>
+              </div>
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/avatar1.jpg">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Sam Lyons</div>
+                <div class="text-muted info">
+                  Tenetur recus...
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item active">
+              <div class="pull-right">
+                <div class="text-muted time">
+                  10:14
+                </div>
+                <div class="badge">11</div>
+              </div>
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/avatar2.jpg">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Anne	Mcgee</div>
+                <div class="text-muted info">
+                  Lorem ipsum...
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item">
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/default-user-image.png">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Michele	Steele</div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item">
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/default-user-image.png">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Pat	Harris</div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item">
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/default-user-image.png">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Jeff	Wilson</div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item">
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/default-user-image.png">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Darlene	Cannon</div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item">
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/default-user-image.png">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Leonard	Higgins</div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-8 chat-window">
+          <div class="panel-body chat-user">
+            <div class="pull-left hidden-sm hidden-md hidden-lg">
+              <button class="btn btn-link btn-lg open-contact-list">
+                <i class="ti-angle-left"></i>
+              </button>
+            </div>
+            <div class="pull-left">
+              <img class="avatar" src="assets/images/avatar2.jpg">
+            </div>
+            <div class="pull-left user">
+              <div class="username">Anne	Mcgee</div>
+              <div class="text-muted info">Active 1h ago</div>
+            </div>
+          </div>
+          <!-- /.panel-body -->
+          <div class="panel-body chat-panel-body">
+            <ul class="chat">
+              <li class="left">
+                <div class="chat-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur recusandae a mollitia magni in. Velit
+                    numquam possimus eum delectus maiores dicta perspiciatis quae aperiam dolores facere, doloribus non, iusto,
+                    sit.
+                  </p>
+                  <div class="time pull-right">
+                    10:03
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+              <li class="right">
+                <div class="chat-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur recusandae a mollitia magni in. Velit
+                    numquam possimus eum delectus maiores dicta perspiciatis quae aperiam dolores facere, doloribus non, iusto,
+                    sit.
+                  </p>
+                  <div class="time pull-right">
+                    10:05
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+              <li class="left">
+                <div class="chat-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur recusandae a mollitia magni in.
+                  </p>
+                  <div class="time pull-right">
+                    10:07
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+              <li class="right">
+                <div class="chat-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur recusandae a mollitia magni in.
+                  </p>
+                  <div class="time pull-right">
+                    10:08
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+              <li class="left">
+                <div class="chat-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="time pull-right">
+                    10:11
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+              <li class="right">
+                <div class="chat-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="time pull-right">
+                    10:14
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- /.panel-body -->
+          <div class="panel-footer">
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button class="btn btn-link" id="btn-attach">
+                  <span class="glyphicon glyphicon-paperclip"></span>
+                </button>
+              </span>
+              <input type="text" class="form-control text-input" placeholder="Type your message here..."/>
+              <span class="input-group-btn">
+                <button class="btn btn-link" id="btn-chat">
+                  <span class="glyphicon glyphicon-send"></span>
+                </button>
+              </span>
+            </div>
+          </div>
+          <!-- /.panel-footer -->
+        </div>
+      </div>
+    </div>
+    <!-- /.panel -->
+  </div>
+  <!-- /.chat-widget -->
+
+
+  <div class="bottom-buttons">
+    <a class="toggle-chat">
+      <i class="ti-comment"></i>
+      <div class="counter">18</div>
+    </a>
+    <a class="scroll-to-top"><i class="ti-angle-up"></i></a>
+  </div>
+
+  <!-- jQuery -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Metis Menu -->
+  <script src="assets/vendor/metisMenu/metisMenu.min.js"></script>
+
+  <!-- OverlayScrollbars -->
+  <script src="assets/vendor/overlayscrollbars/jquery.overlayScrollbars.min.js"></script>
+
+  <!-- Bootstrap Notify -->
+  <script src="assets/vendor/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+  <!-- Moment.js (for Bootstrap Datetimepicker & Chart.js) -->
+  <script src="assets/vendor/moment/moment.min.js"></script>
+
+  <!-- Bootstrap Datetimepicker -->
+  <script src="assets/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+  <!-- Select2 -->
+  <script src="assets/vendor/select2/js/select2.min.js"></script>
+
+  <!-- Chart.js -->
+  <script src="assets/vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Lightbox -->
+  <script src="assets/vendor/lightbox2/lightbox.min.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="assets/js/light-admin.js"></script>
+
+
+  <script>
+    $(function() {
+      notify({
+        type: 'info',
+        icon: 'ti-info-alt',
+        title: 'Hello, John Doe!',
+        message: 'Welcome to <strong>Light Admin</strong> &mdash; a lightweight bootstrap 3.x admin panel template.'
+      });
+
+      window.areaChart = new Chart(document.getElementById('area-chart').getContext('2d'), {
+        type: 'line',
+        data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          datasets: [{
+            label: 'First dataset',
+            borderColor: window.chartColors.red,
+            backgroundColor: window.chartColors.red,
+            fill: false,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ],
+          }, {
+            label: 'Second dataset',
+            borderColor: window.chartColors.yellow,
+            backgroundColor: window.chartColors.yellow,
+            fill: false,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ],
+          }, {
+            label: 'Third dataset',
+            borderColor: window.chartColors.green,
+            backgroundColor: window.chartColors.green,
+            fill: false,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ],
+          }]
+        },
+        options: {
+          responsive: true,
+          title: {
+            display: false
+          },
+          tooltips: {
+            mode: 'index',
+          },
+          hover: {
+            mode: 'index'
+          },
+          legend: {
+            display: false
+          },
+          scales: {
+            xAxes: [{
+              scaleLabel: {
+                display: false,
+                labelString: 'Month'
+              }
+            }],
+            yAxes: [{
+              stacked: true,
+              scaleLabel: {
+                display: false,
+                labelString: 'Value'
+              }
+            }]
+          }
+        }
+      });
+
+      window.pieChart = new Chart(document.getElementById('pie-chart').getContext('2d'), {
+        type: 'pie',
+        data: {
+          datasets: [{
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+            ],
+            backgroundColor: [
+              window.chartColors.red,
+              window.chartColors.orange,
+              window.chartColors.yellow,
+              window.chartColors.green,
+              window.chartColors.blue,
+            ],
+            label: 'Dataset 1'
+          }],
+          labels: [
+            'Red',
+            'Orange',
+            'Yellow',
+            'Green',
+            'Blue'
+          ]
+        },
+        options: {
+          responsive: true,
+          legend: {
+            display: false
+          }
+        }
+      });
+    });
+  </script>
+
+
+</body>
+</html>

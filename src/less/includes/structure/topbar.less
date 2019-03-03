@@ -2,7 +2,7 @@
 
 .navbar {
   margin: 0;
-  min-width: 410px;
+  min-width: 380px;
   width: 100%;
   height: @topbar-height;
   padding-left: 60px;
@@ -47,7 +47,7 @@
         white-space: nowrap;
         .transition(@transition-linear);
         .translate3d(0px, 0, 0);
-        .opacity (1);
+        .opacity(1);
       }
     }
 
@@ -68,8 +68,8 @@
   }
 }
 
-.navbar:not(.navbar-filled) .navbar-header {
-  &.white-bg {
+.navbar.navbar-white-header:not(.navbar-filled) {
+  .navbar-header {
     background: @topbar-background;
     color: @navbar-default-link-color;
   }
@@ -101,10 +101,14 @@
     float: left;
 
     > a {
-      padding: 13px 14px;
+      padding: 13px 10px;
       font-size: 15px;
       font-weight: 300;
       height: (@topbar-height - 1px);
+
+      @media screen and (min-width: 992px) {
+        padding: 13px 14px;
+      }
 
       &:focus {
         outline: 0;
@@ -157,7 +161,11 @@
 
     .user {
       padding: 6px 8px 5px;
-      margin: 0 6px;
+      margin: 0;
+
+      @media screen and (min-width: 992px) {
+        margin: 0 6px;
+      }
 
       > .name {
         padding: 16px 2px 15px 8px;

@@ -1,3 +1,7 @@
+body.hidden {
+  background: #fff;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
@@ -5,10 +9,13 @@ h1, h2, h3, h4, h5, h6 {
 #wrapper {
   width: 100%;
   overflow: hidden;
-  padding-top: @topbar-height;
 
   &.fixed-sidebar {
     min-height: 100%;
+  }
+
+  &.fixed-topbar {
+    padding-top: @topbar-height;
   }
 }
 

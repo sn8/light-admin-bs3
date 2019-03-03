@@ -1,0 +1,49 @@
+<!-- @@master = layouts/non-fixed-topbar.html-->
+
+<!-- @@block = content-->
+      <div class="row">
+        <div class="col-lg-12 heading">
+          <h1 class="page-header">Non-fixed topbar</h1>
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Non-fixed topbar</li>
+          </ol>
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Non-fixed topbar
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <p>You can set the non-fixed topbar by default just replacing the class <code>navbar-fixed-top</code> to <code>navbar-static-top</code> and removing class <code>fixed-topbar</code> from the main wrapper element (<code>div#wrapper</code>).</p>
+              <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  ...
+&lt;/head&gt;
+&lt;body class=&quot;with-overlay-scrollbars&quot;&gt;
+  &lt;div id="wrapper" class=""&gt;
+    &lt;nav id="topbar" class="navbar navbar-default navbar-static-top"&gt;
+      ...
+    &lt;/nav&gt;
+    ...
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+
+      <div style="height:1300px;"></div>
+<!-- @@close-->

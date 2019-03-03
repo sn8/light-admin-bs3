@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Light Admin - Bootstrap Admin Template</title>
+
+  <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico" />
+
+  <!-- Main style -->
+  <link href="assets/css/style-default.css" rel="stylesheet">
+
+  <style>body { display: none; }</style>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="hidden with-overlay-scrollbars">
+
+  <div id="wrapper" class="fixed-topbar">
+
+    <!-- Topbar -->
+    <nav id="topbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <a class="toggle-sidebar"><i class="ti-menu"></i></a>
+        <a class="navbar-brand" href="index.html">
+          <span>Light Admin</span>
+        </a>
+      </div>
+      <!-- /.navbar-header -->
+      <ul class="nav navbar-nav navbar-left search-nav">
+        <li class="search">
+          <i class="ti-search"></i>
+          <form>
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right profile-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle user" data-toggle="dropdown" href="#">
+            <img class="avatar" src="assets/images/avatar3.jpg">
+            <span class="name hidden-sm hidden-xs">John Doe</span>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu dropdown-user">
+            <li><a href="profile.html"><i class="ti-user"></i> User Profile</a></li>
+            <li><a href="#"><i class="ti-settings"></i> Settings</a></li>
+            <li><a href="#"><i class="ti-help-alt"></i> Help</a></li>
+            <li class="divider"></li>
+            <li><a href="login.html"><i class="ti-power-off"></i> Logout</a></li>
+          </ul>
+          <!-- /.dropdown-user -->
+        </li>
+        <!-- /.dropdown -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right icons-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="ti-bell"></i>
+            <span class="indicator indicator-warning"></span>
+          </a>
+          <ul class="dropdown-menu dropdown-notifications">
+            <li>
+              <a href="#">
+                <div>
+                  <i class="ti-comment-alt"></i> <span class="title">New Comment</span>
+                  <span class="pull-right text-muted small">10:24</span>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <i class="ti-alert"></i> <span class="title">Server Alert</span>
+                  <span class="pull-right text-muted small">10:21</span>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <i class="ti-email"></i> <span class="title">New Email</span>
+                    <span class="pull-right text-muted small">10:19</span>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <i class="ti-flag-alt-2"></i> <span class="title">New Task</span>
+                  <span class="pull-right text-muted small">10:16</span>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <i class="ti-server"></i> <span class="title">Server Rebooted</span>
+                  <span class="pull-right text-muted small">10:14</span>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a class="text-center" href="#">
+                <small>View all notifications</small>
+              </a>
+            </li>
+          </ul>
+          <!-- /.dropdown-notifications -->
+        </li>
+        <!-- /.dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="ti-flag-alt-2"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-tasks">
+            <li>
+              <a href="#">
+                <div>
+                  <p>
+                    <span class="title">Task 1</span>
+                    <span class="pull-right text-muted">20%</span>
+                  </p>
+                  <div class="progress progress-striped progress-mini active">
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                         aria-valuemax="100" style="width: 20%">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <p>
+                    <span class="title">Task 2</span>
+                    <span class="pull-right text-muted">40%</span>
+                  </p>
+                  <div class="progress progress-striped progress-mini active">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                         aria-valuemax="100" style="width: 40%">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <p>
+                    <span class="title">Task 3</span>
+                    <span class="pull-right text-muted">60%</span>
+                  </p>
+                  <div class="progress progress-striped progress-mini active">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                         aria-valuemax="100" style="width: 60%">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <p>
+                    <span class="title">Task 4</span>
+                    <span class="pull-right text-muted">80%</span>
+                  </p>
+                  <div class="progress progress-striped progress-mini active">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                         aria-valuemax="100" style="width: 80%">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a class="text-center" href="#">
+                <small>View all tasks</small>
+              </a>
+            </li>
+          </ul>
+          <!-- /.dropdown-tasks -->
+        </li>
+        <!-- /.dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="ti-settings"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-settings non-closing-dropdown">
+            <li>
+              <a>
+                White header
+                <div class="pull-right">
+                  <div class="onoffswitch onoffswitch-sm">
+                    <input type="checkbox" name="white-header-switch" class="onoffswitch-checkbox toggle-white-header" id="white-header-switch">
+                    <label class="onoffswitch-label" for="white-header-switch">
+                      <span class="onoffswitch-inner"></span>
+                      <span class="onoffswitch-switch"></span>
+                    </label>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a>
+                Filled topbar
+                <div class="pull-right">
+                  <div class="onoffswitch onoffswitch-sm">
+                    <input type="checkbox" name="filled-topbar-switch" class="onoffswitch-checkbox toggle-filled-topbar" id="filled-topbar-switch">
+                    <label class="onoffswitch-label" for="filled-topbar-switch">
+                      <span class="onoffswitch-inner"></span>
+                      <span class="onoffswitch-switch"></span>
+                    </label>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a>
+                Mini sidebar
+                <div class="pull-right">
+                  <div class="onoffswitch onoffswitch-sm">
+                    <input type="checkbox" name="mini-sidebar-switch" class="onoffswitch-checkbox toggle-sidebar" id="mini-sidebar-switch">
+                    <label class="onoffswitch-label" for="mini-sidebar-switch">
+                      <span class="onoffswitch-inner"></span>
+                      <span class="onoffswitch-switch"></span>
+                    </label>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li class="text-center dropdown-title">
+              Themes:
+            </li>
+            <li>
+              <a href="index.html">
+                <div>
+                  <span class="indicator theme-default"></span>
+                  <span class="title">Default theme (turquoise)</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="index-blue.html">
+                <div>
+                  <span class="indicator theme-blue"></span>
+                  <span class="title">Blue theme</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="index-red.html">
+                <div>
+                  <span class="indicator theme-red"></span>
+                  <span class="title">Red theme</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="index-purple.html">
+                <div>
+                  <span class="indicator theme-purple"></span>
+                  <span class="title">Purple theme</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="index-yellow.html">
+                <div>
+                  <span class="indicator theme-yellow"></span>
+                  <span class="title">Yellow theme</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- /.dropdown-notifications -->
+        </li>
+        <!-- /.dropdown -->
+      </ul>
+    </nav>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar" role="navigation">
+      <div class="sidebar-nav">
+        <ul class="nav" id="side-menu">
+          <li>
+            <a href="index.html">
+              <i class="ti-stats-up"></i>
+              <p>Dashboard</p>
+              <span class="badge badge-danger">
+                32
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="charts.html">
+              <i class="ti-pie-chart"></i>
+              <p>
+                Charts
+              </p>
+              <span class="badge badge-warning">
+                21
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="crud.html">
+              <i class="ti-write"></i>
+              <p>CRUD</p>
+            </a>
+          </li>
+          <li>
+            <a href="tables.html">
+              <i class="ti-layout"></i>
+              <p>Tables</p>
+            </a>
+          </li>
+          <li>
+            <a href="forms.html">
+              <i class="ti-pencil-alt"></i>
+              <p>Forms</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ti-widget"></i>
+              <p>
+                UI Elements
+                <span class="caret"></span>
+              </p>
+            </a>
+            <ul class="nav">
+              <li>
+                <a href="general.html"><p>General</p></a>
+              </li>
+              <li>
+                <a href="panels.html"><p>Panels</p></a>
+              </li>
+              <li>
+                <a href="tabs_accordions.html"><p>Tabs and Accordions</p></a>
+              </li>
+              <li>
+                <a href="buttons.html"><p>Buttons</p></a>
+              </li>
+              <li>
+                <a href="modals.html"><p>Modals</p></a>
+              </li>
+              <li>
+                <a href="notifications.html"><p>Notifications</p></a>
+              </li>
+              <li>
+                <a href="typography.html"><p>Typography</p></a>
+              </li>
+              <li>
+                <a href="icons.html"><p>Icons</p></a>
+              </li>
+              <li>
+                <a href="grid.html"><p>Grid</p></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ti-layers"></i>
+              <p>
+                Pages
+                <span class="caret"></span>
+              </p>
+            </a>
+            <ul class="nav nav-second-level">
+              <li>
+                <a href="blank.html"><p>Blank Page</p></a>
+              </li>
+              <li>
+                <a href="404.html"><p>404 Page</p></a>
+              </li>
+              <li>
+                <a href="login.html"><p>Login</p></a>
+              </li>
+              <li>
+                <a href="signup.html"><p>Sign Up</p></a>
+              </li>
+              <li>
+                <a href="forgot-password.html"><p>Forgot Password</p></a>
+              </li>
+              <li>
+                <a href="profile.html"><p>Profile</p></a>
+              </li>
+              <li>
+                <a href="calendar.html"><p>Calendar</p></a>
+              </li>
+              <li>
+                <a href="gallery.html"><p>Gallery</p></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ti-layout-slider"></i>
+              <p>
+                Layouts
+                <span class="caret"></span>
+              </p>
+            </a>
+            <ul class="nav nav-second-level">
+              <li>
+                <a href="without-sidebar.html">
+                  <p>Without sidebar</p>
+                </a>
+              </li>
+              <li>
+                <a href="non-fixed-sidebar.html">
+                  <p>Non-fixed sidebar</p>
+                </a>
+              </li>
+              <li>
+                <a href="non-fixed-topbar.html">
+                  <p>Non-fixed topbar</p>
+                </a>
+              </li>
+              <li>
+                <a href="native-scrollbar.html">
+                  <p>Native scrollbar</p>
+                </a>
+              </li>
+              <li>
+                <a href="white-header.html">
+                  <p>White header</p>
+                </a>
+              </li>
+              <li>
+                <a href="filled-topbar.html">
+                  <p>Filled topbar</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ti-arrow-circle-down"></i>
+              <p>
+                3-Level Dropdown
+                <span class="caret"></span>
+              </p>
+            </a>
+            <ul class="nav">
+              <li>
+                <a href="#">
+                  <i class="ti-arrow-circle-right"></i>
+                  <p>Second Level Item</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="ti-arrow-circle-right"></i>
+                  <p>Second Level Item</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="ti-arrow-circle-down"></i>
+                  <p>
+                    Third Level
+                    <span class="caret"></span>
+                  </p>
+                </a>
+                <ul class="nav">
+                  <li>
+                    <a href="#">
+                      <i class="ti-arrow-circle-right"></i>
+                      <p>Third Level Item</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-arrow-circle-right"></i>
+                      <p>Third Level Item</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-arrow-circle-right"></i>
+                      <p>Third Level Item</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-arrow-circle-right"></i>
+                      <p>Third Level Item</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="page-wrapper">
+
+      <div class="row">
+        <div class="col-lg-12 heading">
+          <h1 class="page-header">Non-fixed sidebar</h1>
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Non-fixed sidebar</li>
+          </ol>
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default no-border">
+            <div class="panel-heading no-border">
+              Non-fixed sidebar
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+              <p>You can set the non-fixed sidebar by default just removing the class <code>sidebar-fixed</code> from the main wrapper element (<code>div#wrapper</code>) and removing class <code>overlay-scrollbar</code> from <code>div.sidebar</code>.</p>
+              <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  ...
+&lt;/head&gt;
+&lt;body class=&quot;with-overlay-scrollbars&quot;&gt;
+  &lt;div id="wrapper" class=""&gt;
+    ...
+    &lt;div id="sidebar" class="sidebar"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+
+      <div style="height:1300px;"></div>
+
+    </div>
+    <!-- /#page-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <div id="chat" class="chat-widget">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        Chat
+        <div class="pull-right">
+          <button type="button" class="close toggle-chat" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+      <!-- /.panel-heading -->
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="list-group contacts-list">
+            <a href="#" class="list-group-item">
+              <div class="pull-right">
+                <div class="text-muted time">
+                  10:01
+                </div>
+                <div class="badge">4</div>
+              </div>
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/avatar4.jpg">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Jeffrey Cain</div>
+                <div class="text-muted info">
+                  Velit numquam...
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item">
+              <div class="pull-right">
+                <div class="text-muted time">
+                  10.08
+                </div>
+              </div>
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/avatar1.jpg">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Sam Lyons</div>
+                <div class="text-muted info">
+                  Tenetur recus...
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item active">
+              <div class="pull-right">
+                <div class="text-muted time">
+                  10:14
+                </div>
+                <div class="badge">11</div>
+              </div>
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/avatar2.jpg">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Anne	Mcgee</div>
+                <div class="text-muted info">
+                  Lorem ipsum...
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item">
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/default-user-image.png">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Michele	Steele</div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item">
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/default-user-image.png">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Pat	Harris</div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item">
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/default-user-image.png">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Jeff	Wilson</div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item">
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/default-user-image.png">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Darlene	Cannon</div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item">
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/default-user-image.png">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Leonard	Higgins</div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-8 chat-window">
+          <div class="panel-body chat-user">
+            <div class="pull-left hidden-sm hidden-md hidden-lg">
+              <button class="btn btn-link btn-lg open-contact-list">
+                <i class="ti-angle-left"></i>
+              </button>
+            </div>
+            <div class="pull-left">
+              <img class="avatar" src="assets/images/avatar2.jpg">
+            </div>
+            <div class="pull-left user">
+              <div class="username">Anne	Mcgee</div>
+              <div class="text-muted info">Active 1h ago</div>
+            </div>
+          </div>
+          <!-- /.panel-body -->
+          <div class="panel-body chat-panel-body">
+            <ul class="chat">
+              <li class="left">
+                <div class="chat-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur recusandae a mollitia magni in. Velit
+                    numquam possimus eum delectus maiores dicta perspiciatis quae aperiam dolores facere, doloribus non, iusto,
+                    sit.
+                  </p>
+                  <div class="time pull-right">
+                    10:03
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+              <li class="right">
+                <div class="chat-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur recusandae a mollitia magni in. Velit
+                    numquam possimus eum delectus maiores dicta perspiciatis quae aperiam dolores facere, doloribus non, iusto,
+                    sit.
+                  </p>
+                  <div class="time pull-right">
+                    10:05
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+              <li class="left">
+                <div class="chat-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur recusandae a mollitia magni in.
+                  </p>
+                  <div class="time pull-right">
+                    10:07
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+              <li class="right">
+                <div class="chat-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur recusandae a mollitia magni in.
+                  </p>
+                  <div class="time pull-right">
+                    10:08
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+              <li class="left">
+                <div class="chat-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="time pull-right">
+                    10:11
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+              <li class="right">
+                <div class="chat-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="time pull-right">
+                    10:14
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- /.panel-body -->
+          <div class="panel-footer">
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button class="btn btn-link" id="btn-attach">
+                  <span class="glyphicon glyphicon-paperclip"></span>
+                </button>
+              </span>
+              <input type="text" class="form-control text-input" placeholder="Type your message here..."/>
+              <span class="input-group-btn">
+                <button class="btn btn-link" id="btn-chat">
+                  <span class="glyphicon glyphicon-send"></span>
+                </button>
+              </span>
+            </div>
+          </div>
+          <!-- /.panel-footer -->
+        </div>
+      </div>
+    </div>
+    <!-- /.panel -->
+  </div>
+  <!-- /.chat-widget -->
+
+
+  <div class="bottom-buttons">
+    <a class="toggle-chat">
+      <i class="ti-comment"></i>
+      <div class="counter">18</div>
+    </a>
+    <a class="scroll-to-top"><i class="ti-angle-up"></i></a>
+  </div>
+
+  <!-- jQuery -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Metis Menu -->
+  <script src="assets/vendor/metisMenu/metisMenu.min.js"></script>
+
+  <!-- OverlayScrollbars -->
+  <script src="assets/vendor/overlayscrollbars/jquery.overlayScrollbars.min.js"></script>
+
+  <!-- Bootstrap Notify -->
+  <script src="assets/vendor/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+  <!-- Moment.js (for Bootstrap Datetimepicker & Chart.js) -->
+  <script src="assets/vendor/moment/moment.min.js"></script>
+
+  <!-- Bootstrap Datetimepicker -->
+  <script src="assets/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+  <!-- Select2 -->
+  <script src="assets/vendor/select2/js/select2.min.js"></script>
+
+  <!-- Chart.js -->
+  <script src="assets/vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Lightbox -->
+  <script src="assets/vendor/lightbox2/lightbox.min.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="assets/js/light-admin.js"></script>
+
+
+
+
+
+</body>
+</html>

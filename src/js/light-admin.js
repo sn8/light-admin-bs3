@@ -1,4 +1,7 @@
 $(function() {
+  $('body').fadeIn(500);
+  $('body').removeClass('hidden');
+
   /* Metis Menu */
   $('#side-menu').metisMenu();
 
@@ -7,9 +10,9 @@ $(function() {
     toggleSidebar();
   });
 
-  let current = location.pathname.replace(/^\/+/g, '');
+  const current = location.pathname.match(/([a-zA-Z0-9\s_\\.\-\(\):])+.html$/i);
   $('#side-menu a').each(function() {
-    if ($(this).attr('href').indexOf(current) == 0 && current.length > 0) {
+    if (current && $(this).attr('href').indexOf(current[0]) == 0) {
       const parent = $(this).parent();
       const subNav = parent.parent();
       parent.addClass('active');
@@ -54,7 +57,7 @@ $(function() {
   });
 
   $('.toggle-white-header').on('click', function() {
-    $('#topbar .navbar-header').toggleClass('white-bg');
+    $('#topbar').toggleClass('navbar-white-header');
   });
 
   /* Resize */
@@ -86,13 +89,29 @@ $(function() {
     }).overlayScrollbars();
 
     $('.scroll-to-top').on('touchstart mouseup', function (e) {
-      bodyScrollbar.scroll({y: 0}, 500);
+      bodyScrollbar.scroll({ y: 0 }, 500);
+      e.preventDefault();
+    });    
+  } else {
+    /* Scroll-to-top button without OverlayScrollbars */
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 150) {
+        $('.scroll-to-top').fadeIn(500);
+      } else {
+        $('.scroll-to-top').fadeOut(500);
+      }
+    });
+
+    $('.scroll-to-top').on('touchstart mouseup', function (e) {
+      $('body,html').animate({ scrollTop: 0 }, 500);
       e.preventDefault();
     });
   }
 
   /* Chat */
   const chatPanelBody = chat.find('.chat-panel-body').overlayScrollbars({ }).overlayScrollbars();
+  chat.find('.contacts-list').overlayScrollbars({ }).overlayScrollbars();
+
   $('.toggle-chat').on('click', function() {
     chat.fadeToggle(300);
     chatPanelBody.scroll({ y: "100%" }, 0);
@@ -185,7 +204,7 @@ var notify = function (options) {
     animateExit: 'animated fadeOutUp'
   };
 
-  options = {...defaultOptions, ...options};
+  options = { ...defaultOptions, ...options };
 
   $.notify({
     icon: options.icon,

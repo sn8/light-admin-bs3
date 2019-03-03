@@ -1,6 +1,7 @@
 # Light Admin
 
 **Light Admin** is an a lightweight bootstrap 3.x admin panel template.
+It has 255.3 KB of one minified CSS (theme + bootstrap + all plugins) and 3.2 KB of minified JS.
 
 ### Color themes
 * Default (turquoise)
@@ -12,30 +13,37 @@
 ### Pages
 * Dashboard
 * Charts
+* CRUD
 * Tables
 * Forms
-* General UI Elements
-* Panels
-* Tabs and Accordions
-* Buttons
-* Modals
-* Notifications
-* Typography
-* Icons
-* Grid
-* Blank page
-* 404 Page
-* Login
-* Sign Up
-* Forgot Password
-* Profile
-* Calendar
+* UI Elements
+  * General
+  * Panels
+  * Tabs and Accordions
+  * Buttons
+  * Modals
+  * Modals
+  * Notifications
+  * Typography
+  * Icons
+  * Grid
+* Pages
+  * Blank page
+  * 404 Page
+  * Login
+  * Sign Up
+  * Forgot Password
+  * Profile
+  * Calendar
+  * Gallery
+* Layouts
+  * Without sidebar
+  * Non-fixed sidebar
+  * Non-fixed topbar
+  * Native scrollbar
+  * White header
+  * Filled topbar
 
-### Widgets
-* Scroll-to-top button
-* Chat
-* Todo-list
-* Events feed
 
 ## Credits
 

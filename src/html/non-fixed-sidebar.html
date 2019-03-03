@@ -20,7 +20,7 @@
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
-              <p>You can set the non-fixed sidebar by default just removing the class <code>sidebar-fixed</code> from the main wrapper element (<code>div#wrapper</code>).</p>
+              <p>You can set the non-fixed sidebar by default just removing the class <code>sidebar-fixed</code> from the main wrapper element (<code>div#wrapper</code>) and removing class <code>overlay-scrollbar</code> from <code>div.sidebar</code>.</p>
               <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -30,6 +30,9 @@
 &lt;body class=&quot;with-overlay-scrollbars&quot;&gt;
   &lt;div id="wrapper" class=""&gt;
     ...
+    &lt;div id="sidebar" class="sidebar"&gt;
+      ...
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>

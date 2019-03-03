@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Light Admin - Bootstrap Admin Template</title>
+
+  <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico" />
+
+  <!-- Main style -->
+  <link href="assets/css/style-default.css" rel="stylesheet">
+
+  <style>body { display: none; }</style>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="hidden with-overlay-scrollbars">
+
+  <div id="wrapper" class="fixed-sidebar fixed-topbar">
+
+    <!-- Topbar -->
+    <nav id="topbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <a class="toggle-sidebar"><i class="ti-menu"></i></a>
+        <a class="navbar-brand" href="index.html">
+          <span>Light Admin</span>
+        </a>
+      </div>
+      <!-- /.navbar-header -->
+      <ul class="nav navbar-nav navbar-left search-nav">
+        <li class="search">
+          <i class="ti-search"></i>
+          <form>
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right profile-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle user" data-toggle="dropdown" href="#">
+            <img class="avatar" src="assets/images/avatar3.jpg">
+            <span class="name hidden-sm hidden-xs">John Doe</span>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu dropdown-user">
+            <li><a href="profile.html"><i class="ti-user"></i> User Profile</a></li>
+            <li><a href="#"><i class="ti-settings"></i> Settings</a></li>
+            <li><a href="#"><i class="ti-help-alt"></i> Help</a></li>
+            <li class="divider"></li>
+            <li><a href="login.html"><i class="ti-power-off"></i> Logout</a></li>
+          </ul>
+          <!-- /.dropdown-user -->
+        </li>
+        <!-- /.dropdown -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right icons-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="ti-bell"></i>
+            <span class="indicator indicator-warning"></span>
+          </a>
+          <ul class="dropdown-menu dropdown-notifications">
+            <li>
+              <a href="#">
+                <div>
+                  <i class="ti-comment-alt"></i> <span class="title">New Comment</span>
+                  <span class="pull-right text-muted small">10:24</span>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <i class="ti-alert"></i> <span class="title">Server Alert</span>
+                  <span class="pull-right text-muted small">10:21</span>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <i class="ti-email"></i> <span class="title">New Email</span>
+                    <span class="pull-right text-muted small">10:19</span>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <i class="ti-flag-alt-2"></i> <span class="title">New Task</span>
+                  <span class="pull-right text-muted small">10:16</span>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <i class="ti-server"></i> <span class="title">Server Rebooted</span>
+                  <span class="pull-right text-muted small">10:14</span>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a class="text-center" href="#">
+                <small>View all notifications</small>
+              </a>
+            </li>
+          </ul>
+          <!-- /.dropdown-notifications -->
+        </li>
+        <!-- /.dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="ti-flag-alt-2"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-tasks">
+            <li>
+              <a href="#">
+                <div>
+                  <p>
+                    <span class="title">Task 1</span>
+                    <span class="pull-right text-muted">20%</span>
+                  </p>
+                  <div class="progress progress-striped progress-mini active">
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                         aria-valuemax="100" style="width: 20%">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <p>
+                    <span class="title">Task 2</span>
+                    <span class="pull-right text-muted">40%</span>
+                  </p>
+                  <div class="progress progress-striped progress-mini active">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                         aria-valuemax="100" style="width: 40%">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <p>
+                    <span class="title">Task 3</span>
+                    <span class="pull-right text-muted">60%</span>
+                  </p>
+                  <div class="progress progress-striped progress-mini active">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                         aria-valuemax="100" style="width: 60%">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <div>
+                  <p>
+                    <span class="title">Task 4</span>
+                    <span class="pull-right text-muted">80%</span>
+                  </p>
+                  <div class="progress progress-striped progress-mini active">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                         aria-valuemax="100" style="width: 80%">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a class="text-center" href="#">
+                <small>View all tasks</small>
+              </a>
+            </li>
+          </ul>
+          <!-- /.dropdown-tasks -->
+        </li>
+        <!-- /.dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="ti-settings"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-settings non-closing-dropdown">
+            <li>
+              <a>
+                White header
+                <div class="pull-right">
+                  <div class="onoffswitch onoffswitch-sm">
+                    <input type="checkbox" name="white-header-switch" class="onoffswitch-checkbox toggle-white-header" id="white-header-switch">
+                    <label class="onoffswitch-label" for="white-header-switch">
+                      <span class="onoffswitch-inner"></span>
+                      <span class="onoffswitch-switch"></span>
+                    </label>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a>
+                Filled topbar
+                <div class="pull-right">
+                  <div class="onoffswitch onoffswitch-sm">
+                    <input type="checkbox" name="filled-topbar-switch" class="onoffswitch-checkbox toggle-filled-topbar" id="filled-topbar-switch">
+                    <label class="onoffswitch-label" for="filled-topbar-switch">
+                      <span class="onoffswitch-inner"></span>
+                      <span class="onoffswitch-switch"></span>
+                    </label>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a>
+                Mini sidebar
+                <div class="pull-right">
+                  <div class="onoffswitch onoffswitch-sm">
+                    <input type="checkbox" name="mini-sidebar-switch" class="onoffswitch-checkbox toggle-sidebar" id="mini-sidebar-switch">
+                    <label class="onoffswitch-label" for="mini-sidebar-switch">
+                      <span class="onoffswitch-inner"></span>
+                      <span class="onoffswitch-switch"></span>
+                    </label>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li class="text-center dropdown-title">
+              Themes:
+            </li>
+            <li>
+              <a href="index.html">
+                <div>
+                  <span class="indicator theme-default"></span>
+                  <span class="title">Default theme (turquoise)</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="index-blue.html">
+                <div>
+                  <span class="indicator theme-blue"></span>
+                  <span class="title">Blue theme</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="index-red.html">
+                <div>
+                  <span class="indicator theme-red"></span>
+                  <span class="title">Red theme</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="index-purple.html">
+                <div>
+                  <span class="indicator theme-purple"></span>
+                  <span class="title">Purple theme</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="index-yellow.html">
+                <div>
+                  <span class="indicator theme-yellow"></span>
+                  <span class="title">Yellow theme</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- /.dropdown-notifications -->
+        </li>
+        <!-- /.dropdown -->
+      </ul>
+    </nav>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar overlay-scrollbar" role="navigation">
+      <div class="sidebar-nav">
+        <ul class="nav" id="side-menu">
+          <li>
+            <a href="index.html">
+              <i class="ti-stats-up"></i>
+              <p>Dashboard</p>
+              <span class="badge badge-danger">
+                32
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="charts.html">
+              <i class="ti-pie-chart"></i>
+              <p>
+                Charts
+              </p>
+              <span class="badge badge-warning">
+                21
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="crud.html">
+              <i class="ti-write"></i>
+              <p>CRUD</p>
+            </a>
+          </li>
+          <li>
+            <a href="tables.html">
+              <i class="ti-layout"></i>
+              <p>Tables</p>
+            </a>
+          </li>
+          <li>
+            <a href="forms.html">
+              <i class="ti-pencil-alt"></i>
+              <p>Forms</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ti-widget"></i>
+              <p>
+                UI Elements
+                <span class="caret"></span>
+              </p>
+            </a>
+            <ul class="nav">
+              <li>
+                <a href="general.html"><p>General</p></a>
+              </li>
+              <li>
+                <a href="panels.html"><p>Panels</p></a>
+              </li>
+              <li>
+                <a href="tabs_accordions.html"><p>Tabs and Accordions</p></a>
+              </li>
+              <li>
+                <a href="buttons.html"><p>Buttons</p></a>
+              </li>
+              <li>
+                <a href="modals.html"><p>Modals</p></a>
+              </li>
+              <li>
+                <a href="notifications.html"><p>Notifications</p></a>
+              </li>
+              <li>
+                <a href="typography.html"><p>Typography</p></a>
+              </li>
+              <li>
+                <a href="icons.html"><p>Icons</p></a>
+              </li>
+              <li>
+                <a href="grid.html"><p>Grid</p></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ti-layers"></i>
+              <p>
+                Pages
+                <span class="caret"></span>
+              </p>
+            </a>
+            <ul class="nav nav-second-level">
+              <li>
+                <a href="blank.html"><p>Blank Page</p></a>
+              </li>
+              <li>
+                <a href="404.html"><p>404 Page</p></a>
+              </li>
+              <li>
+                <a href="login.html"><p>Login</p></a>
+              </li>
+              <li>
+                <a href="signup.html"><p>Sign Up</p></a>
+              </li>
+              <li>
+                <a href="forgot-password.html"><p>Forgot Password</p></a>
+              </li>
+              <li>
+                <a href="profile.html"><p>Profile</p></a>
+              </li>
+              <li>
+                <a href="calendar.html"><p>Calendar</p></a>
+              </li>
+              <li>
+                <a href="gallery.html"><p>Gallery</p></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ti-layout-slider"></i>
+              <p>
+                Layouts
+                <span class="caret"></span>
+              </p>
+            </a>
+            <ul class="nav nav-second-level">
+              <li>
+                <a href="without-sidebar.html">
+                  <p>Without sidebar</p>
+                </a>
+              </li>
+              <li>
+                <a href="non-fixed-sidebar.html">
+                  <p>Non-fixed sidebar</p>
+                </a>
+              </li>
+              <li>
+                <a href="non-fixed-topbar.html">
+                  <p>Non-fixed topbar</p>
+                </a>
+              </li>
+              <li>
+                <a href="native-scrollbar.html">
+                  <p>Native scrollbar</p>
+                </a>
+              </li>
+              <li>
+                <a href="white-header.html">
+                  <p>White header</p>
+                </a>
+              </li>
+              <li>
+                <a href="filled-topbar.html">
+                  <p>Filled topbar</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ti-arrow-circle-down"></i>
+              <p>
+                3-Level Dropdown
+                <span class="caret"></span>
+              </p>
+            </a>
+            <ul class="nav">
+              <li>
+                <a href="#">
+                  <i class="ti-arrow-circle-right"></i>
+                  <p>Second Level Item</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="ti-arrow-circle-right"></i>
+                  <p>Second Level Item</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="ti-arrow-circle-down"></i>
+                  <p>
+                    Third Level
+                    <span class="caret"></span>
+                  </p>
+                </a>
+                <ul class="nav">
+                  <li>
+                    <a href="#">
+                      <i class="ti-arrow-circle-right"></i>
+                      <p>Third Level Item</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-arrow-circle-right"></i>
+                      <p>Third Level Item</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-arrow-circle-right"></i>
+                      <p>Third Level Item</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-arrow-circle-right"></i>
+                      <p>Third Level Item</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="page-wrapper">
+
+      <div class="row">
+        <div class="col-lg-12 heading">
+          <h1 class="page-header">CRUD</h1>
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">CRUD</li>
+          </ol>
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default no-border">
+            <div class="panel-body">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#modal">
+                Create User
+              </button>
+
+              <form role="form" class="filter-panel">
+                <div class="row">
+                  <div class="col-md-3 form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="col-md-3 form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control">
+                  </div>
+                  <div class="col-md-3 form-group">
+                    <label>Country</label>
+                    <select class="form-control select2" multiple>
+                      <option value="United States" selected>United States</option> 
+                      <option value="United Kingdom">United Kingdom</option> 
+                      <option value="Afghanistan">Afghanistan</option> 
+                      <option value="Albania">Albania</option> 
+                      <option value="Algeria">Algeria</option> 
+                      <option value="American Samoa">American Samoa</option> 
+                      <option value="Andorra">Andorra</option> 
+                      <option value="Angola">Angola</option> 
+                      <option value="Anguilla">Anguilla</option> 
+                      <option value="Antarctica">Antarctica</option> 
+                      <option value="Antigua and Barbuda">Antigua and Barbuda</option> 
+                      <option value="Argentina">Argentina</option> 
+                      <option value="Armenia">Armenia</option> 
+                      <option value="Aruba">Aruba</option> 
+                      <option value="Australia">Australia</option> 
+                      <option value="Austria">Austria</option> 
+                      <option value="Azerbaijan">Azerbaijan</option> 
+                      <option value="Bahamas">Bahamas</option> 
+                      <option value="Bahrain">Bahrain</option> 
+                      <option value="Bangladesh">Bangladesh</option> 
+                      <option value="Barbados">Barbados</option> 
+                      <option value="Belarus">Belarus</option> 
+                      <option value="Belgium">Belgium</option> 
+                      <option value="Belize">Belize</option> 
+                      <option value="Benin">Benin</option> 
+                      <option value="Bermuda">Bermuda</option> 
+                      <option value="Bhutan">Bhutan</option> 
+                      <option value="Bolivia">Bolivia</option> 
+                      <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option> 
+                      <option value="Botswana">Botswana</option> 
+                      <option value="Bouvet Island">Bouvet Island</option> 
+                      <option value="Brazil">Brazil</option> 
+                      <option value="British Indian Ocean Territory">British Indian Ocean Territory</option> 
+                      <option value="Brunei Darussalam">Brunei Darussalam</option> 
+                      <option value="Bulgaria">Bulgaria</option> 
+                      <option value="Burkina Faso">Burkina Faso</option> 
+                      <option value="Burundi">Burundi</option> 
+                      <option value="Cambodia">Cambodia</option> 
+                      <option value="Cameroon">Cameroon</option> 
+                      <option value="Canada">Canada</option> 
+                      <option value="Cape Verde">Cape Verde</option> 
+                      <option value="Cayman Islands">Cayman Islands</option> 
+                      <option value="Central African Republic">Central African Republic</option> 
+                      <option value="Chad">Chad</option> 
+                      <option value="Chile">Chile</option> 
+                      <option value="China">China</option> 
+                      <option value="Christmas Island">Christmas Island</option> 
+                      <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option> 
+                      <option value="Colombia">Colombia</option> 
+                      <option value="Comoros">Comoros</option> 
+                      <option value="Congo">Congo</option> 
+                      <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option> 
+                      <option value="Cook Islands">Cook Islands</option> 
+                      <option value="Costa Rica">Costa Rica</option> 
+                      <option value="Cote D'ivoire">Cote D'ivoire</option> 
+                      <option value="Croatia">Croatia</option> 
+                      <option value="Cuba">Cuba</option> 
+                      <option value="Cyprus">Cyprus</option> 
+                      <option value="Czech Republic">Czech Republic</option> 
+                      <option value="Denmark">Denmark</option> 
+                      <option value="Djibouti">Djibouti</option> 
+                      <option value="Dominica">Dominica</option> 
+                      <option value="Dominican Republic">Dominican Republic</option> 
+                      <option value="Ecuador">Ecuador</option> 
+                      <option value="Egypt">Egypt</option> 
+                      <option value="El Salvador">El Salvador</option> 
+                      <option value="Equatorial Guinea">Equatorial Guinea</option> 
+                      <option value="Eritrea">Eritrea</option> 
+                      <option value="Estonia">Estonia</option> 
+                      <option value="Ethiopia">Ethiopia</option> 
+                      <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option> 
+                      <option value="Faroe Islands">Faroe Islands</option> 
+                      <option value="Fiji">Fiji</option> 
+                      <option value="Finland">Finland</option> 
+                      <option value="France">France</option> 
+                      <option value="French Guiana">French Guiana</option> 
+                      <option value="French Polynesia">French Polynesia</option> 
+                      <option value="French Southern Territories">French Southern Territories</option> 
+                      <option value="Gabon">Gabon</option> 
+                      <option value="Gambia">Gambia</option> 
+                      <option value="Georgia">Georgia</option> 
+                      <option value="Germany">Germany</option> 
+                      <option value="Ghana">Ghana</option> 
+                      <option value="Gibraltar">Gibraltar</option> 
+                      <option value="Greece">Greece</option> 
+                      <option value="Greenland">Greenland</option> 
+                      <option value="Grenada">Grenada</option> 
+                      <option value="Guadeloupe">Guadeloupe</option> 
+                      <option value="Guam">Guam</option> 
+                      <option value="Guatemala">Guatemala</option> 
+                      <option value="Guinea">Guinea</option> 
+                      <option value="Guinea-bissau">Guinea-bissau</option> 
+                      <option value="Guyana">Guyana</option> 
+                      <option value="Haiti">Haiti</option> 
+                      <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option> 
+                      <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option> 
+                      <option value="Honduras">Honduras</option> 
+                      <option value="Hong Kong">Hong Kong</option> 
+                      <option value="Hungary">Hungary</option> 
+                      <option value="Iceland">Iceland</option> 
+                      <option value="India">India</option> 
+                      <option value="Indonesia">Indonesia</option> 
+                      <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option> 
+                      <option value="Iraq">Iraq</option> 
+                      <option value="Ireland">Ireland</option> 
+                      <option value="Israel">Israel</option> 
+                      <option value="Italy">Italy</option> 
+                      <option value="Jamaica">Jamaica</option> 
+                      <option value="Japan">Japan</option> 
+                      <option value="Jordan">Jordan</option> 
+                      <option value="Kazakhstan">Kazakhstan</option> 
+                      <option value="Kenya">Kenya</option> 
+                      <option value="Kiribati">Kiribati</option> 
+                      <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option> 
+                      <option value="Korea, Republic of">Korea, Republic of</option> 
+                      <option value="Kuwait">Kuwait</option> 
+                      <option value="Kyrgyzstan">Kyrgyzstan</option> 
+                      <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option> 
+                      <option value="Latvia">Latvia</option> 
+                      <option value="Lebanon">Lebanon</option> 
+                      <option value="Lesotho">Lesotho</option> 
+                      <option value="Liberia">Liberia</option> 
+                      <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option> 
+                      <option value="Liechtenstein">Liechtenstein</option> 
+                      <option value="Lithuania">Lithuania</option> 
+                      <option value="Luxembourg">Luxembourg</option> 
+                      <option value="Macao">Macao</option> 
+                      <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option> 
+                      <option value="Madagascar">Madagascar</option> 
+                      <option value="Malawi">Malawi</option> 
+                      <option value="Malaysia">Malaysia</option> 
+                      <option value="Maldives">Maldives</option> 
+                      <option value="Mali">Mali</option> 
+                      <option value="Malta">Malta</option> 
+                      <option value="Marshall Islands">Marshall Islands</option> 
+                      <option value="Martinique">Martinique</option> 
+                      <option value="Mauritania">Mauritania</option> 
+                      <option value="Mauritius">Mauritius</option> 
+                      <option value="Mayotte">Mayotte</option> 
+                      <option value="Mexico">Mexico</option> 
+                      <option value="Micronesia, Federated States of">Micronesia, Federated States of</option> 
+                      <option value="Moldova, Republic of">Moldova, Republic of</option> 
+                      <option value="Monaco">Monaco</option> 
+                      <option value="Mongolia">Mongolia</option> 
+                      <option value="Montserrat">Montserrat</option> 
+                      <option value="Morocco">Morocco</option> 
+                      <option value="Mozambique">Mozambique</option> 
+                      <option value="Myanmar">Myanmar</option> 
+                      <option value="Namibia">Namibia</option> 
+                      <option value="Nauru">Nauru</option> 
+                      <option value="Nepal">Nepal</option> 
+                      <option value="Netherlands">Netherlands</option> 
+                      <option value="Netherlands Antilles">Netherlands Antilles</option> 
+                      <option value="New Caledonia">New Caledonia</option> 
+                      <option value="New Zealand">New Zealand</option> 
+                      <option value="Nicaragua">Nicaragua</option> 
+                      <option value="Niger">Niger</option> 
+                      <option value="Nigeria">Nigeria</option> 
+                      <option value="Niue">Niue</option> 
+                      <option value="Norfolk Island">Norfolk Island</option> 
+                      <option value="Northern Mariana Islands">Northern Mariana Islands</option> 
+                      <option value="Norway">Norway</option> 
+                      <option value="Oman">Oman</option> 
+                      <option value="Pakistan">Pakistan</option> 
+                      <option value="Palau">Palau</option> 
+                      <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option> 
+                      <option value="Panama">Panama</option> 
+                      <option value="Papua New Guinea">Papua New Guinea</option> 
+                      <option value="Paraguay">Paraguay</option> 
+                      <option value="Peru">Peru</option> 
+                      <option value="Philippines">Philippines</option> 
+                      <option value="Pitcairn">Pitcairn</option> 
+                      <option value="Poland">Poland</option> 
+                      <option value="Portugal">Portugal</option> 
+                      <option value="Puerto Rico">Puerto Rico</option> 
+                      <option value="Qatar">Qatar</option> 
+                      <option value="Reunion">Reunion</option> 
+                      <option value="Romania">Romania</option> 
+                      <option value="Russian Federation">Russian Federation</option> 
+                      <option value="Rwanda">Rwanda</option> 
+                      <option value="Saint Helena">Saint Helena</option> 
+                      <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option> 
+                      <option value="Saint Lucia">Saint Lucia</option> 
+                      <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option> 
+                      <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option> 
+                      <option value="Samoa">Samoa</option> 
+                      <option value="San Marino">San Marino</option> 
+                      <option value="Sao Tome and Principe">Sao Tome and Principe</option> 
+                      <option value="Saudi Arabia">Saudi Arabia</option> 
+                      <option value="Senegal">Senegal</option> 
+                      <option value="Serbia and Montenegro">Serbia and Montenegro</option> 
+                      <option value="Seychelles">Seychelles</option> 
+                      <option value="Sierra Leone">Sierra Leone</option> 
+                      <option value="Singapore">Singapore</option> 
+                      <option value="Slovakia">Slovakia</option> 
+                      <option value="Slovenia">Slovenia</option> 
+                      <option value="Solomon Islands">Solomon Islands</option> 
+                      <option value="Somalia">Somalia</option> 
+                      <option value="South Africa">South Africa</option> 
+                      <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option> 
+                      <option value="Spain">Spain</option> 
+                      <option value="Sri Lanka">Sri Lanka</option> 
+                      <option value="Sudan">Sudan</option> 
+                      <option value="Suriname">Suriname</option> 
+                      <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option> 
+                      <option value="Swaziland">Swaziland</option> 
+                      <option value="Sweden">Sweden</option> 
+                      <option value="Switzerland">Switzerland</option> 
+                      <option value="Syrian Arab Republic">Syrian Arab Republic</option> 
+                      <option value="Taiwan, Province of China">Taiwan, Province of China</option> 
+                      <option value="Tajikistan">Tajikistan</option> 
+                      <option value="Tanzania, United Republic of">Tanzania, United Republic of</option> 
+                      <option value="Thailand">Thailand</option> 
+                      <option value="Timor-leste">Timor-leste</option> 
+                      <option value="Togo">Togo</option> 
+                      <option value="Tokelau">Tokelau</option> 
+                      <option value="Tonga">Tonga</option> 
+                      <option value="Trinidad and Tobago">Trinidad and Tobago</option> 
+                      <option value="Tunisia">Tunisia</option> 
+                      <option value="Turkey">Turkey</option> 
+                      <option value="Turkmenistan">Turkmenistan</option> 
+                      <option value="Turks and Caicos Islands">Turks and Caicos Islands</option> 
+                      <option value="Tuvalu">Tuvalu</option> 
+                      <option value="Uganda">Uganda</option> 
+                      <option value="Ukraine">Ukraine</option> 
+                      <option value="United Arab Emirates">United Arab Emirates</option> 
+                      <option value="United Kingdom">United Kingdom</option> 
+                      <option value="United States">United States</option> 
+                      <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option> 
+                      <option value="Uruguay">Uruguay</option> 
+                      <option value="Uzbekistan">Uzbekistan</option> 
+                      <option value="Vanuatu">Vanuatu</option> 
+                      <option value="Venezuela">Venezuela</option> 
+                      <option value="Viet Nam">Viet Nam</option> 
+                      <option value="Virgin Islands, British">Virgin Islands, British</option> 
+                      <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option> 
+                      <option value="Wallis and Futuna">Wallis and Futuna</option> 
+                      <option value="Western Sahara">Western Sahara</option> 
+                      <option value="Yemen">Yemen</option> 
+                      <option value="Zambia">Zambia</option> 
+                      <option value="Zimbabwe">Zimbabwe</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3 form-group">
+                    <label>Created At</label>
+                    <div class="input-group date" id="datetimepicker">
+                      <input type="text" class="form-control">
+                      <span class="input-group-addon">
+                        <i class="ti-calendar"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group text-right">
+                    <button type="submit" class="btn btn-info">
+                      <span class="glyphicon glyphicon-search"></span>
+                      Search
+                    </button>
+                    <button type="reset" class="btn btn-default">
+                      Reset
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <div class="table-responsive">
+                <table width="100%" class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                      <th style="width: 40px">
+                        <div class="checkbox">
+                          <input class="styled select-all-checkboxes" type="checkbox">
+                          <label></label>
+                        </div>
+                      </th>
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>E-mail</th>
+                      <th>Country</th>
+                      <th>Created At</th>
+                      <th style="width: 135px">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="checkbox">
+                          <input class="styled" name="selected[]" value="1" type="checkbox">
+                          <label></label>
+                        </div>
+                      </td>
+                      <td>1</td>
+                      <td>Mark Otto</td>
+                      <td>mark_otto@example.com</td>
+                      <td>United States</td>
+                      <td>01/02/2019 2:45 PM</td>
+                      <td>
+                        <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#modal">
+                          <span class="glyphicon glyphicon-pencil"></span>
+                          Edit
+                        </button>
+                        <button class="btn btn-xs btn-danger">
+                          <span class="glyphicon glyphicon-remove"></span>
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="checkbox">
+                          <input class="styled" name="selected[]" value="2" type="checkbox">
+                          <label></label>
+                        </div>
+                      </td>
+                      <td>2</td>
+                      <td>Jacob Thornton</td>
+                      <td>jacob_thornton@example.com</td>
+                      <td>Norway</td>
+                      <td>01/02/2019 3:12 PM</td>
+                      <td>
+                        <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#modal">
+                          <span class="glyphicon glyphicon-pencil"></span>
+                          Edit
+                        </button>
+                        <button class="btn btn-xs btn-danger">
+                          <span class="glyphicon glyphicon-remove"></span>
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="checkbox">
+                          <input class="styled" name="selected[]" value="3" type="checkbox">
+                          <label></label>
+                        </div>
+                      </td>
+                      <td>3</td>
+                      <td>Jeffrey Cain</td>
+                      <td>jeffrey_cain@example.com</td>
+                      <td>Australia</td>
+                      <td>02/02/2019 1:45 PM</td>
+                      <td>
+                        <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#modal">
+                          <span class="glyphicon glyphicon-pencil"></span>
+                          Edit
+                        </button>
+                        <button class="btn btn-xs btn-danger">
+                          <span class="glyphicon glyphicon-remove"></span>
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="checkbox">
+                          <input class="styled" name="selected[]" value="4" type="checkbox">
+                          <label></label>
+                        </div>
+                      </td>
+                      <td>4</td>
+                      <td>Darlene Cannon</td>
+                      <td>darlene_cannon@example.com</td>
+                      <td>Switzerland</td>
+                      <td>03/02/2019 3:12 PM</td>
+                      <td>
+                        <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#modal">
+                          <span class="glyphicon glyphicon-pencil"></span>
+                          Edit
+                        </button>
+                        <button class="btn btn-xs btn-danger">
+                          <span class="glyphicon glyphicon-remove"></span>
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="checkbox">
+                          <input class="styled" name="selected[]" value="5" type="checkbox">
+                          <label></label>
+                        </div>
+                      </td>
+                      <td>5</td>
+                      <td>Sam Lyons</td>
+                      <td>sam_lyons@example.com</td>
+                      <td>Canada</td>
+                      <td>02/02/2019 2:20 PM</td>
+                      <td>
+                        <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#modal">
+                          <span class="glyphicon glyphicon-pencil"></span>
+                          Edit
+                        </button>
+                        <button class="btn btn-xs btn-danger">
+                          <span class="glyphicon glyphicon-remove"></span>
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="checkbox">
+                          <input class="styled" name="selected[]" value="6" type="checkbox">
+                          <label></label>
+                        </div>
+                      </td>
+                      <td>6</td>
+                      <td>Anne Mcgee</td>
+                      <td>anne_mcgee@example.com</td>
+                      <td>Germany</td>
+                      <td>02/02/2019 4:05 PM</td>
+                      <td>
+                        <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#modal">
+                          <span class="glyphicon glyphicon-pencil"></span>
+                          Edit
+                        </button>
+                        <button class="btn btn-xs btn-danger">
+                          <span class="glyphicon glyphicon-remove"></span>
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="checkbox">
+                          <input class="styled" name="selected[]" value="7" type="checkbox">
+                          <label></label>
+                        </div>
+                      </td>
+                      <td>7</td>
+                      <td>Michele Steele</td>
+                      <td>michele_steele@example.com</td>
+                      <td>France</td>
+                      <td>02/02/2019 4:12 PM</td>
+                      <td>
+                        <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#modal">
+                          <span class="glyphicon glyphicon-pencil"></span>
+                          Edit
+                        </button>
+                        <button class="btn btn-xs btn-danger">
+                          <span class="glyphicon glyphicon-remove"></span>
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="checkbox">
+                          <input class="styled" name="selected[]" value="8" type="checkbox">
+                          <label></label>
+                        </div>
+                      </td>
+                      <td>8</td>
+                      <td>Pat Harris</td>
+                      <td>pat_harris@example.com</td>
+                      <td>United Kingdom</td>
+                      <td>03/02/2019 2:24 PM</td>
+                      <td>
+                        <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#modal">
+                          <span class="glyphicon glyphicon-pencil"></span>
+                          Edit
+                        </button>
+                        <button class="btn btn-xs btn-danger">
+                          <span class="glyphicon glyphicon-remove"></span>
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="checkbox">
+                          <input class="styled" name="selected[]" value="9" type="checkbox">
+                          <label></label>
+                        </div>
+                      </td>
+                      <td>9</td>
+                      <td>Jeff Wilson</td>
+                      <td>jeff_wilson@example.com</td>
+                      <td>Japan</td>
+                      <td>03/02/2019 3:12 PM</td>
+                      <td>
+                        <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#modal">
+                          <span class="glyphicon glyphicon-pencil"></span>
+                          Edit
+                        </button>
+                        <button class="btn btn-xs btn-danger">
+                          <span class="glyphicon glyphicon-remove"></span>
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="checkbox">
+                          <input class="styled" name="selected[]" value="10" type="checkbox">
+                          <label></label>
+                        </div>
+                      </td>
+                      <td>10</td>
+                      <td>Leonard Higgins</td>
+                      <td>leonard_higgins@example.com</td>
+                      <td>Brazil</td>
+                      <td>03/02/2019 6:42 PM</td>
+                      <td>
+                        <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#modal">
+                          <span class="glyphicon glyphicon-pencil"></span>
+                          Edit
+                        </button>
+                        <button class="btn btn-xs btn-danger">
+                          <span class="glyphicon glyphicon-remove"></span>
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <ul class="pagination pagination-sm no-border">
+                <li class="page-item">
+                  <a class="page-link" href="#">«</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">4</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">5</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">»</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+      <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Create User</h4>
+            </div>
+            <div class="modal-body">
+              <form role="form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Name" class="form-control">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label>Email address</label>
+                    <input type="email" placeholder="Enter email" class="form-control">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Password" class="form-control">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label>Repeat Password</label>
+                    <input type="password" placeholder="Password" class="form-control">
+                  </div>
+                  <div class="col-md-12 form-group">
+                    <label>Information</label>
+                    <textarea class="form-control"></textarea>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="checkbox checkbox-success">
+                      <input type="checkbox" id="checkbox">
+                      <label for="checkbox">
+                        Approve
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /#page-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <div id="chat" class="chat-widget">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        Chat
+        <div class="pull-right">
+          <button type="button" class="close toggle-chat" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+      <!-- /.panel-heading -->
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="list-group contacts-list">
+            <a href="#" class="list-group-item">
+              <div class="pull-right">
+                <div class="text-muted time">
+                  10:01
+                </div>
+                <div class="badge">4</div>
+              </div>
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/avatar4.jpg">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Jeffrey Cain</div>
+                <div class="text-muted info">
+                  Velit numquam...
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item">
+              <div class="pull-right">
+                <div class="text-muted time">
+                  10.08
+                </div>
+              </div>
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/avatar1.jpg">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Sam Lyons</div>
+                <div class="text-muted info">
+                  Tenetur recus...
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item active">
+              <div class="pull-right">
+                <div class="text-muted time">
+                  10:14
+                </div>
+                <div class="badge">11</div>
+              </div>
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/avatar2.jpg">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Anne	Mcgee</div>
+                <div class="text-muted info">
+                  Lorem ipsum...
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item">
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/default-user-image.png">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Michele	Steele</div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item">
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/default-user-image.png">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Pat	Harris</div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item">
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/default-user-image.png">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Jeff	Wilson</div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item">
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/default-user-image.png">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Darlene	Cannon</div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+            <a href="#" class="list-group-item">
+              <div class="pull-left user-avatar">
+                <img class="avatar" src="assets/images/default-user-image.png">
+              </div>
+              <div class="pull-left user">
+                <div class="username">Leonard	Higgins</div>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-8 chat-window">
+          <div class="panel-body chat-user">
+            <div class="pull-left hidden-sm hidden-md hidden-lg">
+              <button class="btn btn-link btn-lg open-contact-list">
+                <i class="ti-angle-left"></i>
+              </button>
+            </div>
+            <div class="pull-left">
+              <img class="avatar" src="assets/images/avatar2.jpg">
+            </div>
+            <div class="pull-left user">
+              <div class="username">Anne	Mcgee</div>
+              <div class="text-muted info">Active 1h ago</div>
+            </div>
+          </div>
+          <!-- /.panel-body -->
+          <div class="panel-body chat-panel-body">
+            <ul class="chat">
+              <li class="left">
+                <div class="chat-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur recusandae a mollitia magni in. Velit
+                    numquam possimus eum delectus maiores dicta perspiciatis quae aperiam dolores facere, doloribus non, iusto,
+                    sit.
+                  </p>
+                  <div class="time pull-right">
+                    10:03
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+              <li class="right">
+                <div class="chat-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur recusandae a mollitia magni in. Velit
+                    numquam possimus eum delectus maiores dicta perspiciatis quae aperiam dolores facere, doloribus non, iusto,
+                    sit.
+                  </p>
+                  <div class="time pull-right">
+                    10:05
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+              <li class="left">
+                <div class="chat-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur recusandae a mollitia magni in.
+                  </p>
+                  <div class="time pull-right">
+                    10:07
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+              <li class="right">
+                <div class="chat-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur recusandae a mollitia magni in.
+                  </p>
+                  <div class="time pull-right">
+                    10:08
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+              <li class="left">
+                <div class="chat-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="time pull-right">
+                    10:11
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+              <li class="right">
+                <div class="chat-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="time pull-right">
+                    10:14
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- /.panel-body -->
+          <div class="panel-footer">
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button class="btn btn-link" id="btn-attach">
+                  <span class="glyphicon glyphicon-paperclip"></span>
+                </button>
+              </span>
+              <input type="text" class="form-control text-input" placeholder="Type your message here..."/>
+              <span class="input-group-btn">
+                <button class="btn btn-link" id="btn-chat">
+                  <span class="glyphicon glyphicon-send"></span>
+                </button>
+              </span>
+            </div>
+          </div>
+          <!-- /.panel-footer -->
+        </div>
+      </div>
+    </div>
+    <!-- /.panel -->
+  </div>
+  <!-- /.chat-widget -->
+
+
+  <div class="bottom-buttons">
+    <a class="toggle-chat">
+      <i class="ti-comment"></i>
+      <div class="counter">18</div>
+    </a>
+    <a class="scroll-to-top"><i class="ti-angle-up"></i></a>
+  </div>
+
+  <!-- jQuery -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Metis Menu -->
+  <script src="assets/vendor/metisMenu/metisMenu.min.js"></script>
+
+  <!-- OverlayScrollbars -->
+  <script src="assets/vendor/overlayscrollbars/jquery.overlayScrollbars.min.js"></script>
+
+  <!-- Bootstrap Notify -->
+  <script src="assets/vendor/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+  <!-- Moment.js (for Bootstrap Datetimepicker & Chart.js) -->
+  <script src="assets/vendor/moment/moment.min.js"></script>
+
+  <!-- Bootstrap Datetimepicker -->
+  <script src="assets/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+  <!-- Select2 -->
+  <script src="assets/vendor/select2/js/select2.min.js"></script>
+
+  <!-- Chart.js -->
+  <script src="assets/vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Lightbox -->
+  <script src="assets/vendor/lightbox2/lightbox.min.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="assets/js/light-admin.js"></script>
+
+
+  <script>
+    $(function () {
+      $('#datetimepicker').datetimepicker();
+      $('.select2').select2({ theme: 'bootstrap' });
+    });
+  </script>
+
+
+</body>
+</html>

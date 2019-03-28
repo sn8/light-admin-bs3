@@ -1,6 +1,6 @@
 # Light Admin
 
-**Light Admin** is an a lightweight bootstrap 3.x admin panel template.
+**Light Admin** is an lightweight bootstrap 3.x admin panel template.
 It has 255.3 KB of one minified CSS (theme + bootstrap + all plugins) and 3.2 KB of minified JS.
 
 ### Color themes

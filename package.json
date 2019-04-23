@@ -3,7 +3,7 @@
   "title": "Light Admin",
   "description": "Bootstrap 3.x Admin Panel Template",
   "version": "1.0.0",
-  "author": "Artem Sinkov (sinkov@nxweb.ru)",
+  "author": "Artem Sinkov (mailbox@trendytech.ru)",
   "dependencies": {
     "@sn8/themify-icons": "^1.0.0",
     "awesome-bootstrap-checkbox": "^0.3.7",

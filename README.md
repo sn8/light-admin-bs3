@@ -1,5 +1,7 @@
 # Light Admin
 
+DEMO: https://trendytech.ru/templates/light-admin/
+
 ![](https://user-images.githubusercontent.com/16609460/56563922-8382a380-65df-11e9-94e3-f3c4144a9973.png)
 
 **Light Admin** is a lightweight bootstrap 3.x admin panel template.

@@ -1,5 +1,3 @@
-// gulp default && gulp clean-dist && gulp copy-dist && gulp docs
-
 // Requirements
 const gulp = require('gulp');
 const less = require('gulp-less');

@@ -1,3 +1,5 @@
+// gulp default && gulp clean-dist && gulp copy-dist && gulp docs
+
 // Requirements
 const gulp = require('gulp');
 const less = require('gulp-less');
@@ -8,6 +10,7 @@ const header = require('gulp-header');
 const cleanCSS = require('gulp-clean-css');
 const rename = require("gulp-rename");
 const minify = require('gulp-babel-minify');
+const markdown = require('gulp-markdown');
 const pkg = require('./package.json');
 
 // Paths
@@ -28,11 +31,11 @@ const paths = {
 // Set the banner content
 const banner = ['/**\n',
   ' * <%= pkg.title %> v<%= pkg.version %>\n',
-  ` * Copyright ${(new Date()).getFullYear()},  <%= pkg.author %>\n`,
+  ` * Copyright ${(new Date()).getFullYear()}, <%= pkg.author %>\n`,
   ' */\n',
 ].join('');
 
-// Compile LESS files from /less into /css
+// Compile LESS files
 gulp.task('less', () => {
   return gulp.src(`${paths.srcLess}/*.less`)
     .pipe(less())
@@ -145,12 +148,11 @@ gulp.task('default', ['copy', 'less', 'js', 'minify-css', 'minify-js', 'extend']
 
 gulp.task('minify', ['minify-css', 'minify-js']);
 
+gulp.task('docs', ['convert-markdown', 'create-docs']);
+
 // Clean dist
 gulp.task('clean-dist', () => {
-  gulp.src('build/dist', { read: false })
-    .pipe(clean());
-
-  gulp.src('build/src', { read: false })
+  return gulp.src(['build/dist', 'build/src'], { read: false })
     .pipe(clean());
 });
 
@@ -159,13 +161,10 @@ gulp.task('copy-dist', () => {
   gulp.src([`${paths.dist}/**/*`])
     .pipe(gulp.dest('build/dist'));
 
-  gulp.src(['package.json'])
-    .pipe(gulp.dest('build/'));
+  /*gulp.src(['package.json'])
+    .pipe(gulp.dest('build/'));*/
 
   gulp.src(['README.md'])
-    .pipe(gulp.dest('build/'));
-
-  gulp.src(['docs/'])
     .pipe(gulp.dest('build/'));
 
   gulp.src([`${paths.srcLess}/**/*`])
@@ -173,6 +172,19 @@ gulp.task('copy-dist', () => {
 
   gulp.src([paths.srcJs])
     .pipe(gulp.dest('build/src/js'));
+});
+
+// Generate HTML docs
+gulp.task('convert-markdown', () => {
+  return gulp.src('README.md')
+    .pipe(markdown())
+    .pipe(gulp.dest('docs/'));
+});
+
+gulp.task('create-docs', () => {
+  return gulp.src('docs/index.html')
+    .pipe(extender({ annotations: false, verbose: false }))
+    .pipe(gulp.dest('build/docs/'));
 });
 
 // Configure the browserSync task

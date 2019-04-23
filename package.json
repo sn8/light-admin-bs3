@@ -34,6 +34,7 @@
     "gulp-header": "^1.8.7",
     "gulp-html-extend": "^1.1.6",
     "gulp-less": "^3.1.0",
+    "gulp-markdown": "^3.0.0",
     "gulp-rename": "^1.2.2"
   }
 }

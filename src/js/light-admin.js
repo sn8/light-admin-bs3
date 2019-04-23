@@ -1,5 +1,5 @@
 $(function() {
-  $('body').fadeIn(500);
+  $('body').fadeIn(100);
   $('body').removeClass('hidden');
 
   /* Metis Menu */

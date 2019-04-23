@@ -1,5 +1,7 @@
 # Light Admin
 
+![light-admin](https://user-images.githubusercontent.com/16609460/56563922-8382a380-65df-11e9-94e3-f3c4144a9973.png)
+
 **Light Admin** is an lightweight bootstrap 3.x admin panel template.
 It has 255.3 KB of one minified CSS (theme + bootstrap + all plugins) and 3.2 KB of minified JS.
 
@@ -113,8 +115,3 @@ After install dependencies now you can run the automated taks, here are the avai
 * `gulp minify-css` A CSS minifier task.
 * `gulp minify-js` A JS minifer task,
 * `gulp copy` Copy vendor libraries to dist directory
-
-## Changelog
-
-##### Version 1.0.0 - 17 Dec 2018
-* Initial Release

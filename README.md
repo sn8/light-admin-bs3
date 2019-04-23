@@ -2,7 +2,7 @@
 
 ![](https://user-images.githubusercontent.com/16609460/56563922-8382a380-65df-11e9-94e3-f3c4144a9973.png)
 
-**Light Admin** is an lightweight bootstrap 3.x admin panel template.
+**Light Admin** is a lightweight bootstrap 3.x admin panel template.
 It has 255.3 KB of one minified CSS (theme + bootstrap + all plugins) and 3.2 KB of minified JS.
 
 ### Color themes

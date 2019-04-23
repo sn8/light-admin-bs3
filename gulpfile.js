@@ -148,43 +148,10 @@ gulp.task('default', ['copy', 'less', 'js', 'minify-css', 'minify-js', 'extend']
 
 gulp.task('minify', ['minify-css', 'minify-js']);
 
-gulp.task('docs', ['convert-markdown', 'create-docs']);
-
 // Clean dist
 gulp.task('clean-dist', () => {
   return gulp.src(['build/dist', 'build/src'], { read: false })
     .pipe(clean());
-});
-
-// Copy dist
-gulp.task('copy-dist', () => {
-  gulp.src([`${paths.dist}/**/*`])
-    .pipe(gulp.dest('build/dist'));
-
-  /*gulp.src(['package.json'])
-    .pipe(gulp.dest('build/'));*/
-
-  gulp.src(['README.md'])
-    .pipe(gulp.dest('build/'));
-
-  gulp.src([`${paths.srcLess}/**/*`])
-    .pipe(gulp.dest('build/src/less'));
-
-  gulp.src([paths.srcJs])
-    .pipe(gulp.dest('build/src/js'));
-});
-
-// Generate HTML docs
-gulp.task('convert-markdown', () => {
-  return gulp.src('README.md')
-    .pipe(markdown())
-    .pipe(gulp.dest('docs/'));
-});
-
-gulp.task('create-docs', () => {
-  return gulp.src('docs/index.html')
-    .pipe(extender({ annotations: false, verbose: false }))
-    .pipe(gulp.dest('build/docs/'));
 });
 
 // Configure the browserSync task
